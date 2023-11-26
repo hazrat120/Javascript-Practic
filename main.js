@@ -1328,21 +1328,136 @@
 // const d = -1 / 0;
 // document.querySelector(".demo").innerHTML = d;
 
-const cars = [];
-cars[0] = "Saab";
-cars[1] = "volvo";
-cars[2] = "BMW";
-cars[3] = "Lamborgini";
-console.log(cars);
+// const cars = [];
+// cars[0] = "Saab";
+// cars[1] = "volvo";
+// cars[2] = "BMW";
+// cars[3] = "Lamborgini";
+// console.log(cars);
 
-let Parsonname = ["Hazrat ", "Ali ", "Rakib ", "Mizan ", "Hosen ", "Abid"];
-console.log(Parsonname);
-document.querySelector(".demo").innerHTML = Parsonname;
+// let Parsonname = ["Hazrat ", "Ali ", "Rakib ", "Mizan ", "Hosen ", "Abid"];
+// console.log(Parsonname);
+// document.querySelector(".demo").innerHTML = Parsonname;
 
-const car = ["BMW", "VOLVO", "SAAB", "LAMBOR GINI"];
-document.querySelector(".demo").innerHTML = car[0];
-console.log(car[2]);
-console.log(cars[1]);
-console.log(Parsonname[0]);
-console.log(Parsonname.length);
-console.log(car.length);
+// const car = ["BMW", "VOLVO", "SAAB", "LAMBOR GINI"];
+// document.querySelector(".demo").innerHTML = car[0];
+// console.log(car[2]);
+// console.log(cars[1]);
+// console.log(Parsonname[0]);
+// console.log(Parsonname.length);
+// console.log(car.length);
+// console.log(cars.length);
+// console.log(cars[4]);
+// console.log(car[3]);
+
+// const cars = ["saab", "Volvo", "BMW", "Toyota", "Ford", "Honda"];
+// console.log(cars);
+// cars[0] = "Car-1";
+// console.log(cars);
+// cars[3] = "Tesla";
+// console.log(cars);
+// const car = cars + " ";
+// document.querySelector(".demo").innerHTML = car.toString();
+// console.log(cars.toString());
+
+// const fruit = ["Banana", "Orange", "Apple", "Mango", "Pineaple", "papaya"];
+// console.log(fruit);
+// console.log(fruit.length);
+// console.log(fruit.toString());
+// document.querySelector(".demo").innerHTML = fruit;
+
+// const parson = ["Hazrat", "Ali", "Rakib", "Mizan", "Hosen", 40, 50, 100];
+// console.log(parson);
+// document.querySelector(".demo").innerHTML = parson[2];
+// console.log(parson[6]);
+
+// const parsons = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   Roll: "494155",
+//   Subject: "CSE",
+//   Age: "23",
+// };
+// console.log(parsons);
+// document.querySelector(".demo").innerHTML = parsons.Roll;
+// console.log(parsons.firstName);
+// console.log(parsons.lastName);
+// console.log(parsons.Subject);
+// console.log(parsons.Age);
+
+// const fruit = ["banana", "orange", "apple", "mango", "komola", "kola"];
+// document.querySelector(".demo").innerHTML = fruit[fruit.length - 1];
+// const a = fruit[fruit.length - 1];
+// console.log(a);
+// document.querySelector(".demo").innerHTML = fruit[fruit.length - 1];
+
+// console.log(fruit[fruit.length - 1]);
+
+// const fruit = ["banana", "orange", "apple", "mango", "kola", "aam"];
+// let fLen = fruit.length;
+
+// let text = "<ul>";
+// for (let i = 0; i < fLen; i++) {
+//   text += "<li>" + fruit[i] + "</li>";
+// }
+// text += "</ul>";
+// document.querySelector(".box1").innerHTML = text;
+// document.write(text);
+
+// const fruit = ["banana", "orange", "apple", "mango", "papaya", "paineaple"];
+
+// let text = "<ul>";
+// fruit.forEach(myFunction);
+// text += "<ul>";
+// document.querySelector(".box1").innerHTML = text;
+// function myFunction(value) {
+//   text += "<li>" + value + "</li>";
+// }
+
+// const fruits = ["APPLE", "BANANA", "ORANGE", "MANGO", "PAPAYA"];
+// let fLen = fruits.length;
+
+// let txt = "<ul>";
+// for (let i = 0; i < fLen; i++) {
+//   txt += "<li>" + fruits[i] + "</li>";
+// }
+// txt += "</ul>";
+// document.querySelector(".box2").innerHTML = txt;
+
+// const fruits = ["APPLE", "BANANA", "ORANGE", "MANGO"];
+// let fLen = fruits.length;
+
+// let text = "<ul>";
+// for (let i = 0; i < fLen; i++) {
+//   text += "<li>" + fruits[i] + "</li>";
+// }
+// text += "</ul>";
+// document.querySelector(".box1").innerHTML = text;
+// console.log(text);
+
+// const fol = ["Banana", "Apple", "Mango", "Orange", "Papaya", "etc"];
+// let txt = "<ul>";
+// fol.forEach(myFunction);
+// txt += "</ul>";
+
+// document.querySelector(".box2").innerHTML = txt;
+// function myFunction(value) {
+//   txt += "<li>" + value + "</li>";
+// }
+
+// const fruits = ["Kola", "Aple", "Komola", "Labu", "Malta"];
+// fruits.push("Lamon");
+// document.querySelector(".demo").innerHTML = fruits;
+
+// function myFunction() {
+//   fruits.push("Lemon");
+//   document.querySelector(".demo").innerHTML = fruits;
+// }
+
+const Fruits = ["Lamon", "Qukamba", "Apple", "Banana", "Orange"];
+document.querySelector(".demo").innerHTML = Fruits;
+
+function myFunction() {
+  Fruits.push("Komla");
+  document.querySelector(".demo").innerHTML = Fruits;
+}
