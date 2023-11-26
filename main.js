@@ -1454,10 +1454,56 @@
 //   document.querySelector(".demo").innerHTML = fruits;
 // }
 
-const Fruits = ["Lamon", "Qukamba", "Apple", "Banana", "Orange"];
-document.querySelector(".demo").innerHTML = Fruits;
+// const Fruits = ["Lamon", "Qukamba", "Apple", "Banana", "Orange"];
+// document.querySelector(".demo").innerHTML = Fruits;
 
-function myFunction() {
-  Fruits.push("Komla");
-  document.querySelector(".demo").innerHTML = Fruits;
-}
+// function myFunction() {
+//   Fruits.push("Komla");
+//   document.querySelector(".demo").innerHTML = Fruits;
+// }
+
+// const Fruits = ["Apple", "Banana", "Orange"];
+// document.querySelector(".demo").innerHTML = Fruits;
+
+// function myFunction() {
+//   Fruits[Fruits.length] = "Lemon";
+//   document.querySelector(".demo").innerHTML = Fruits;
+// }
+
+// const fole = [
+//   "Apple",
+//   "Orange",
+//   "Mango",
+//   "Banana",
+//   "Pineapple",
+//   "Papaya",
+//   "Kiwi",
+//   "Grape",
+//   "Peach",
+//   "Watermalon",
+// ];
+// document.querySelector(".demo").innerHTML = fole;
+
+// function myFunction() {
+//   fole[fole.length] = "Lemon";
+//   document.querySelector(".demo").innerHTML = fole;
+// }
+
+// const fruit = ["Banana", "Orange", "Apple"];
+// fruit[6] = "Lemon";
+// let fLan = fruit.length;
+// let text = "";
+// for (i = 0; i < fLan; i++) {
+//   text += fruit[i] + "<br>";
+// }
+// document.querySelector(".box1").innerHTML = text;
+
+// const fruits = ["BANANA", "ORANGE", "APPLE"];
+// fruits[6] = "LEMON";
+
+// let flen = fruits.length;
+// let txt = "";
+// for (i = 0; i < flen; i++) {
+//   txt += fruits[i] + "<br>";
+// }
+// document.querySelector(".box2").innerHTML = txt;
