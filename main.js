@@ -1290,9 +1290,59 @@
 // document.write(y);
 // console.log(y);
 
-let x = Number.EPSILON;
-document.querySelector(".demo").innerHTML = x;
-console.log(Number.EPSILON);
+// let x = Number.EPSILON;
+// document.querySelector(".demo").innerHTML = x;
+// console.log(Number.EPSILON);
 
-document.querySelector(".demo").innerHTML = Number.MAX_VALUE;
-console.log(Number.MAX_VALUE);
+// document.querySelector(".demo").innerHTML = Number.MAX_VALUE;
+// console.log(Number.MAX_VALUE);
+
+// document.write(Number.EPSILON);
+// document.write("<br>" + Number.MAX_SAFE_INTEGER);
+// console.log(typeof EPSILON);
+// console.log(typeof MAX_SAFE_INTEGER);
+
+// let x = 7;
+// document.querySelector(".demo").innerHTML = x.MAX_VALUE;
+
+// let y = 100;
+// document.querySelector(".demo").innerHTML = y.MAX_VALUE;
+
+// let a = Number.MIN_VALUE;
+// document.querySelector(".demo").innerHTML = a;
+
+// let b = Number.MIN_VALUE;
+// document.querySelector(".demo").innerHTML = b;
+
+// let x = Number.MAX_SAFE_INTEGER;
+// document.querySelector(".demo").innerHTML = x;
+
+// let a = Number.MIN_SAFE_INTEGER;
+// document.querySelector(".demo").innerHTML = a;
+
+// let b = Number.POSITIVE_INFINITY;
+// document.querySelector(".demo").innerHTML = b;
+// let c = Number.NEGATIVE_INFINITY;
+// document.querySelector(".demo").innerHTML = c;
+
+// const d = -1 / 0;
+// document.querySelector(".demo").innerHTML = d;
+
+const cars = [];
+cars[0] = "Saab";
+cars[1] = "volvo";
+cars[2] = "BMW";
+cars[3] = "Lamborgini";
+console.log(cars);
+
+let Parsonname = ["Hazrat ", "Ali ", "Rakib ", "Mizan ", "Hosen ", "Abid"];
+console.log(Parsonname);
+document.querySelector(".demo").innerHTML = Parsonname;
+
+const car = ["BMW", "VOLVO", "SAAB", "LAMBOR GINI"];
+document.querySelector(".demo").innerHTML = car[0];
+console.log(car[2]);
+console.log(cars[1]);
+console.log(Parsonname[0]);
+console.log(Parsonname.length);
+console.log(car.length);
