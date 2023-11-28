@@ -1586,12 +1586,114 @@
 // console.log(fruit);
 // document.querySelector(".show").innerHTML = fruits;
 
-const Names = ["Mr.Ali", "Hazrat", "Ali", "Mizan", "Rakib"];
-Names[0] = "Hosen";
-document.querySelector(".show").innerHTML = Names;
-Names[2] = "Mohammad";
-document.querySelector(".show1").innerHTML = Names;
-document.querySelector(".show").innerHTML = delete Names[0];
-document.querySelector(".show1").innerHTML = Names;
-let abc = delete Names[1];
-document.querySelector(".show").innerHTML = Names;
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.querySelector(".show").innerHTML = "The first fruit is: " + fruits[0];
+// delete fruits[0];
+// document.querySelector(".show1").innerHTML = "The first fruit is: " + fruits[0];
+
+// const myGirls = ["Farzana", "Mim", "Pocadim"];
+// const myBoys = ["Hazrat", "Ali", "Kaneya"];
+// const myChildren = myGirls.concat(myBoys);
+// document.querySelector(".show").innerHTML = myChildren;
+
+// let myGirls = ["Deya", "Rita", "Obonte", "Oise"];
+// let myBoys = ["Rakib", "Mizan", "Hosen", "Mahabub"];
+// let myChildren = myGirls.concat(myBoys);
+// document.querySelector(".show").innerHTML = myChildren;
+
+// const array1 = ["Rakib", "Mizan"];
+// const array2 = ["HOSEN", "HAJJAM"];
+// const array3 = ["mahabub", "sorif"];
+// const myChildren = array1.concat(array2, array3);
+// document.querySelector(".demo").innerHTML = myChildren;
+
+// const names1 = ["HAZRAT", "ALI", "RAKIB"];
+// const names2 = ["Mizan", "Hosen", "Sobuj"];
+// const names3 = ["mahabub", "delower", "mase"];
+// let myChildren = names1.concat(names2, names3);
+// let Join = myChildren.join(" - ");
+// document.querySelector(".demo").innerHTML = Join;
+// let Add = names1.concat("Mohin");
+// document.querySelector(".demo").innerHTML = Add;
+// let Haj = names2.concat("Ridoy");
+// document.querySelector(".demo").innerHTML = Haj;
+// const myArr = [
+//   [1, 2],
+//   [3, 4],
+//   [5, 6],
+//   [7, 8],
+// ];
+// const newArr = myArr.flat();
+// document.querySelector(".show").innerHTML = newArr;
+// document.querySelector(".show1").innerHTML = myArr;
+// document.querySelector("show1").innerHTML = myArr.splice(2, 0, "10", "11");
+
+// const names = ["Mizan", "Rakib", "Ali", "Hosen", "Hazrat"];
+// document.querySelector(".show").innerHTML = names;
+// names.splice(1, 0, "LEMON", "KATHAL");
+// document.querySelector(".show1").innerHTML = names;
+// names.splice(0, 2);
+// document.querySelector(".show1").innerHTML = names;
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.querySelector(".box1").innerHTML = "Original Arry:<br> " + fruits;
+// let removed = fruits.splice(2, 2, "Lemon", "Kiwi");
+// document.querySelector(".box2").innerHTML = "New Array:<br>" + fruits;
+// document.querySelector(".box3").innerHTML = "Removed Items:<br>" + removed;
+
+// let fruits = ["Apple", "Banana", "Orange", "Guava"];
+// document.querySelector(".box1").innerHTML = "Original Array:<br>" + fruits;
+// let removed = fruits.splice(2, 2, "Lemon", "Junkfruit");
+// document.querySelector(".box2").innerHTML = "Removed Array:<br>" + removed;
+// document.querySelector(".box3").innerHTML = "New Array:<br>" + fruits;
+
+// const citrus = fruits.slice(1);
+// document.querySelector(".box4").innerHTML = fruits + "<br> <br>" + citrus;
+
+// const fruits = ["banana", "Orange", "Lemon", "Lemon", "Apple", "mango"];
+// document.querySelector(".show").innerHTML = fruits;
+// const citrus = fruits.slice(1, 3);
+// document.querySelector(".show1").innerHTML = citrus;
+
+// const fruit = ["One", "Two", "Three", "Four"];
+// document.querySelector(".show").innerHTML = fruit;
+// fruit.sort();
+// document.querySelector(".show1").innerHTML = fruit;
+
+// let Names = ["Hazrat", "Ali", "Rakib", "Hosen", "Mizan", "Mahabub"];
+// document.querySelector(".show").innerHTML = "Original Array = " + Names;
+// Names.sort();
+// console.log("Short Arry = " + Names);
+// Names.reverse();
+// document.querySelector(".show1").innerHTML = "Reverse Array = " + Names;
+
+// const points = [40, 50, 100, 30, 10, 60, 20];
+// document.querySelector(".show").innerHTML = points;
+// points.sort(function (a, b) {
+//   return a - b;
+// });
+// document.querySelector(".show1").innerHTML = points;
+
+// let digit = [50, 30, 10, 40, 20, 70, 60];
+// document.querySelector(".show").innerHTML = digit;
+
+// digit.sort(function (a, b) {
+//   return a - b;
+// });
+// document.querySelector(".show1").innerHTML = digit;
+
+const number = [60, 30, 10, 50, 20, 40];
+document.querySelector(".show").innerHTML = number;
+number.join(" - ");
+number.sort(function (a, b) {
+  return a - b;
+});
+document.querySelector(".show1").innerHTML = number;
+
+const point = [40, 100, 1, 5, 25, 10];
+document.querySelector(".show").innerHTML = point;
+
+point.sort(function (a, b) {
+  return a - b;
+});
+document.querySelector(".show1").innerHTML = point;
