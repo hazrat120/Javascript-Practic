@@ -1682,18 +1682,149 @@
 // });
 // document.querySelector(".show1").innerHTML = digit;
 
-const number = [60, 30, 10, 50, 20, 40];
-document.querySelector(".show").innerHTML = number;
-number.join(" - ");
-number.sort(function (a, b) {
+// const number = [60, 30, 10, 50, 20, 40];
+// document.querySelector(".show").innerHTML = number;
+// number.join(" - ");
+// number.sort(function (a, b) {
+//   return a - b;
+// });
+// document.querySelector(".show1").innerHTML = number;
+
+// const point = [40, 100, 1, 5, 25, 10];
+// document.querySelector(".show").innerHTML = point;
+
+// point.sort(function (a, b) {
+//   return a - b;
+// });
+// document.querySelector(".show1").innerHTML = point;
+
+// const points = [40, 100, 1, 5, 35];
+// document.querySelector(".demo").innerHTML = points;
+
+// function myFunction1() {
+//   points.sort();
+//   document.querySelector(".demo").points;
+// }
+
+// function myFunction2() {
+//   points.sort(function (a, b) {
+//     return a - b;
+//   });
+//   document.querySelector(".demo").innerHTML = points;
+// }
+
+// const point = [40, 100, 1, 5, 25, 10];
+// document.querySelector(".show3").innerHTML = point;
+
+// function myFunction1() {
+//   console.log("myFunction1");
+//   point.sort((a, b) => a - b);
+//   document.querySelector(".show3").innerHTML = point.join();
+// }
+
+// function myFunction2() {
+//   console.log("myFunction2");
+//   point.sort((a, b) => b - a);
+//   document.querySelector(".show3").innerHTML = point.join();
+// }
+
+// const digits = [20, 10, 50, 30, 60, 40, 70, 80];
+// document.querySelector(".show3").innerHTML = digits;
+
+// function myFunction1() {
+//   console.log("Function1");
+//   digits.sort((a, b) => b - a);
+//   document.querySelector(".show3").innerHTML = digits;
+// }
+
+// function myFunction2() {
+//   console.log("Function2");
+//   digits.sort((a, b) => a - b);
+//   document.querySelector(".show3").innerHTML = digits;
+// }
+
+// const points = [100, 50, 90, 40, 80, 30, 70, 20, 60, 10, 50];
+// document.querySelector(".show3").innerHTML = points;
+
+// function myFunction1() {
+//   console.log("Function-1");
+//   points.sort(function () {
+//     return 0.5 - Math.random();
+//   });
+//   document.querySelector(".show3").innerHTML = points;
+// }
+
+// let digits = [70, 20, 60, 10, 50, 100, 50, 90, 40, 80, 30];
+// document.querySelector(".show3").innerHTML = digits;
+
+// function myFunction2() {
+//   console.log("Function2");
+//   digits.sort(function () {
+//     return 0.5 - Math.random();
+//   });
+//   document.querySelector(".show3").innerHTML = digits;
+// }
+
+// const digits = [40, 100, 1, 5, 25, 10];
+// document.querySelector(".demo").innerHTML = digits;
+// function myFunction() {
+//   console.log("Function");
+//   digits.sort(function () {
+//     return 0.5 - Math.random();
+//   });
+//   document.querySelector(".demo").innerHTML = digits;
+// }
+
+// const points = [40, 100, 1, 5, 25, 10];
+// document.querySelector(".demo").innerHTML = points;
+// console.log(points);
+// function myFunction() {
+//   console.log("MyFunction");
+//   for (let i = points.length - 1; i > 0; i--) {
+//     let j = Math.floor(Math.random() * (i + 1));
+//     let k = points[i];
+//     points[i] = points[j];
+//     points[j] = k;
+//   }
+
+//   document.querySelector(".demo").innerHTML = points.join("|");
+// }
+
+// const points = [40, 100, 1, 5, 25, 10];
+// document.querySelector(".demo").innerHTML = points;
+
+// function myFunction() {
+//   for (let i = points.length - 1; i > 0; i--) {
+//     let j = Math.floor(Math.random() * (i + 1));
+//     let k = points[i];
+//     points[i] = points[j];
+//     points[j] = k;
+//   }
+//   document.querySelector(".demo").innerHTML = points;
+// }
+
+// let digits = [40, 100, 1, 5, 25, 10, 40, 100, 1, 5, 25, 10];
+// document.querySelector(".demo").innerHTML = digits;
+
+// function myFunction() {
+//   console.log("MyFunction");
+//   for (let i = points.length - 1; i > 0; i--) {
+//     let j = Math.floor(Math.random() * (i + 1));
+//     let k = points[i];
+//     points[i] = points[j];
+//     points[j] = k;
+//   }
+//   document.querySelector(".demo").innerHTML = points;
+// }
+
+// const points = [40, 100, 1, 5, 25, 10];
+// points.sort(function (a, b) {
+//   return a - b;
+// });
+// document.querySelector(".demo").innerHTML = "Lowest Number = " + points[0];
+
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function (a, b) {
   return a - b;
 });
-document.querySelector(".show1").innerHTML = number;
-
-const point = [40, 100, 1, 5, 25, 10];
-document.querySelector(".show").innerHTML = point;
-
-point.sort(function (a, b) {
-  return a - b;
-});
-document.querySelector(".show1").innerHTML = point;
+document.querySelector(".demo1").innerHTML = points[0];

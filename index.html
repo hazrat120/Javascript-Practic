@@ -13,24 +13,32 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="show"></div>
-
-    <div class="show show1"></div>
-
-    <section id="main-box">
-      <div class="grid-container">
-        <div class="box box1">Free Palestine - 1</div>
-        <div class="box box2">Free Palestine - 2</div>
-        <div class="box box3">Free Palestine - 3</div>
-        <div class="box box4">Free Palestine - 4</div>
+    <!-------- Single Box And Single Button --------->
+    <section id="single_box">
+      <div class="container">
+        <div class="box_same demo1">Free Palestine</div>
       </div>
+      <button onclick="myFunction1">Click Me</button>
     </section>
 
-    <div id="test">
-      <p class="demo">Free Palestine</p>
-      <button class="com_btn" onclick="myFunction()">Click Me</button>
-    </div>
+    <!-- 2 Box 1 Button For Show Javascript Content-->
+    <section id="box">
+      <div class="container">
+        <div class="box_same demo2">Free Palestine</div>
+        <div class="box_same demo3">Free Palestine</div>
+      </div>
+      <button onclick="myFunction">Click Me</button>
+    </section>
 
+    <!--------- 3Box 1 Button---------->
+    <section id="box2">
+      <div class="container box-3">
+        <div class="box_same demo4">Free Palestine</div>
+        <div class="box_same demo5">Free Palestine</div>
+        <div class="box_same demo6">Free Palestine</div>
+      </div>
+      <button onclick="myFunction2">Click Me</button>
+    </section>
     <!-------- Script Js--------->
     <script src="./main.js"></script>
   </body>
