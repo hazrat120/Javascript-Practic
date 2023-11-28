@@ -1507,3 +1507,91 @@
 //   txt += fruits[i] + "<br>";
 // }
 // document.querySelector(".box2").innerHTML = txt;
+
+// const parson = [];
+// parson[0] = "Hazrat";
+// parson[1] = "Ali";
+// parson[2] = "Hajjam";
+// parson[3] = "Mizan";
+// parson[4] = "Rakib";
+// parson[5] = "Hosen";
+// parson[6] = 45;
+// parson[7] = 5;
+// document.querySelector(".demo").innerHTML = parson[0] + " " + parson.length;
+// console.log(parson[4] + " = " + parson.length);
+// document.querySelector(".demo").innerHTML =
+//   parson[0] + ", Length: " + parson.length;
+
+// const person = [];
+// person[0] = "Hazrat Ali";
+// person["firstName"] = "Hazrat";
+// person["lastName"] = "Ali";
+// person["age"] = "23";
+// document.querySelector(".demo").innerHTML = person[0] + " " + person.length;
+
+// const fruits = ["Banana", "Orange", "Apple"];
+// document.querySelector(".show").innerHTML = Array.isArray(fruits);
+// console.log(Array.isArray(fruits));
+
+// var fruit = ["Kola", "Komla", "Malta", "Lamu"];
+// document.querySelector(".show1").innerHTML = fruit instanceof Array;
+// console.log(fruit instanceof Array);
+
+// const fruits = ["Apple", "Banana", "Orange", "Mango"];
+// console.log("Fruits Length = " + fruits.length);
+
+// document.querySelector(".show").innerHTML = fruits.toString();
+
+// document.querySelector('.show1').innerHTML = fruits.join(' - ');
+
+// let fruit = ["Guava", "Apple", "Orange", "Banana", "Mango"];
+// document.querySelector(".show").innerHTML = fruit.join(" + ");
+// document.querySelector(".show1").innerHTML = fruit.join(" _ ");
+// document.querySelector(".demo").innerHTML = fruit.join(" - ");
+// document.querySelector(".demo").innerHTML = fruit.pop();
+// document.querySelector(".demo").innerHTML = fruit;
+
+// const Name = ["Rakib", "Mizan", "Ali", "Hazrat", "Sobuj", "Hosen"];
+// document.querySelector(".demo").innerHTML = Name.pop();
+// document.querySelector(".demo").innerHTML = Name;
+// document.querySelector(".show").innerHTML = Name.pop();
+// document.querySelector(".demo").innerHTML = Name.join(" - ");
+// document.querySelector(".show1").innerHTML = Name;
+// document.querySelector(".show").innerHTML = Name.push("Mahabub");
+// document.querySelector(".show1").innerHTML = Name;
+// document.querySelector(".show").innerHTML = Name.pop();
+// document.querySelector(".show1").innerHTML = Name;
+
+// const Names = ["Mohammad", "Hazrat Ali", "Mizan", "Rakib", "Mahabub"];
+// console.log(Names);
+// document.querySelector(".show1").innerHTML = Names.join(" - ");
+// document.querySelector(".show").innerHTML = Names.push("Sobuz");
+// document.querySelector(".show1").innerHTML = Names;
+// document.querySelector(".show").innerHTML = Names.shift();
+// document.querySelector(".show1").innerHTML = Names;
+// document.querySelector(".show").innerHTML = Names.shift();
+// let a = Names.shift();
+// document.querySelector(".show").innerHTML = a;
+// document.querySelector(".show1").innerHTML = Names;
+
+// let names = ["Hosen", "Hazrat", "Ali", "Rakib", "Ali", "Sobuz"];
+// let Names = names.shift();
+// document.querySelector(".show").innerHTML = names;
+// document.querySelector(".show1").innerHTML = Names;
+// let ab = names.unshift("Hello");
+// document.querySelector(".show1").innerHTML = ab;
+
+// const fruits = ["Banana", "Apple", "Mango", "Orange", "Guava"];
+// let fruit = fruits.unshift("Kola");
+// console.log(fruit);
+// document.querySelector(".show").innerHTML = fruits;
+
+const Names = ["Mr.Ali", "Hazrat", "Ali", "Mizan", "Rakib"];
+Names[0] = "Hosen";
+document.querySelector(".show").innerHTML = Names;
+Names[2] = "Mohammad";
+document.querySelector(".show1").innerHTML = Names;
+document.querySelector(".show").innerHTML = delete Names[0];
+document.querySelector(".show1").innerHTML = Names;
+let abc = delete Names[1];
+document.querySelector(".show").innerHTML = Names;
