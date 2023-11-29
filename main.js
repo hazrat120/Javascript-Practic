@@ -2158,20 +2158,219 @@
 // const newdigitArr = digitArr.flatMap((x) => x * 2);
 // document.querySelector(".demo2").innerHTML = newdigitArr;
 
-const numbers = [45, 4, 9, 16, 25];
-const over18 = numbers.filter(myFunction);
+// const numbers = [45, 4, 9, 16, 25];
+// const over18 = numbers.filter(myFunction);
 
-document.querySelector(".demo1").innerHTML = over18;
+// document.querySelector(".demo1").innerHTML = over18;
 
-function myFunction(value, index, array) {
-  return value > 18;
-}
+// function myFunction(value, index, array) {
+//   return value > 18;
+// }
 
-const numbers1 = [45, 6, 2, 7, 8, 10, 30];
-const over17 = numbers1.filter(myFunction);
+// const numbers1 = [45, 6, 2, 7, 8, 10, 30];
+// const over17 = numbers1.filter(myFunction);
 
-document.querySelector(".demo1").innerHTML = over17;
+// document.querySelector(".demo1").innerHTML = over17;
 
-function myFunction1(value, index, array) {
-  return value > 18;
-}
+// function myFunction1(value, index, array) {
+//   return value > 18;
+// }
+
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduce(myFunction);
+
+// document.querySelector(".demo1").innerHTML = "The sum is: " + sum;
+
+// function myFunction(total, value, index, array) {
+//   return total + value;
+// }
+
+// const number = [20, 5, 50, 10, 30, 5, 40];
+// let sum1 = number.reduce(myFunction1);
+
+// document.querySelector(".demo2").innerHTML = "The sum is: " + sum1;
+
+// function myFunction1(total, value, index, array) {
+//   return total + value;
+// }
+
+// const numbers = [21, 30, 50, 10, 40, 60];
+// let sum = numbers.reduce(myFunction);
+
+// document.querySelector(".demo1").innerHTML = "The sum is: " + sum;
+
+// function myFunction(total, value) {
+//   console.log("Function");
+//   return total + value;
+// }
+
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = number.reduce(myFunction);
+
+// document.querySelector(".demo1").innerHTML = "The sum is: " + sum;
+
+// function myFunction(total, value) {
+//   return total + value;
+// }
+
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduce(myFunction, 100);
+
+// document.querySelector(".demo1").innerHTML = "The sum is: " + sum;
+
+// function myFunction(total, value) {
+//   return total + value;
+// }
+
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduce(myFunction, 80);
+
+// document.querySelector(".demo1").innerHTML = "The sum is: " + sum;
+
+// function myFunction(total, value) {
+//   return total + value;
+// }
+
+// const number = [45, 4, 9, 16, 25];
+// let sum1 = number.reduceRight(myFunction);
+
+// document.querySelector(".demo1").innerHTML = "The sum is: " + sum1;
+
+// function myFunction(total, value) {
+//   return total + value;
+// }
+
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduceRight(myFunction);
+
+// document.querySelector(".demo1").innerHTML = "The sum is: " + sum;
+
+// function myFunction(total, value) {
+//   return total + value;
+// }
+
+// const numbers = [45, 4, 9, 16, 25];
+// const allOver18 = numbers.every(myFunction);
+
+// document.querySelector(".demo1").innerHTML = "All over 18 is: " + allOver18;
+
+// function myFunction(value, index, array) {
+//   return value > 18;
+// }
+
+// let number = [19, 29, 40, 30, 25];
+// let allOvers18 = number.every(myFunction1);
+
+// document.querySelector(".demo1").innerHTML = "All over 18 is: " + allOvers18;
+
+// function myFunction1(value, index, array) {
+//   return value > 18;
+// }
+
+// const numbers = [45, 4, 9, 16, 25];
+// let allOver18 = numbers.every(myFunction);
+
+// document.querySelector(".demo1").innerHTML = "All over 18 is: " + allOver18;
+
+// function myFunction(value) {
+//   return value > 18;
+// }
+
+// const numbers = [45, 40, 30, 23, 25];
+// let someOver18 = numbers.some(myFunction);
+
+// document.querySelector(".demo1").innerHTML = "Some over 18 is: " + someOver18;
+
+// function myFunction(value, index, array) {
+//   return value > 18;
+// }
+
+// const fruits = ["Apple", "Orange", "Apple", "Mango"];
+// let position = fruits.indexOf("Apple") + 1;
+
+// document.querySelector(".demo1").innerHTML =
+//   "Apple is found in position: " + position;
+
+// const fruit = ["Apple", "Orange", "Apple", "Mango"];
+// let positions = fruit.indexOf("Apple") + 1;
+// document.querySelector(".demo1").innerHTML =
+//   "Apple is found in positions : " + position;
+
+// const fruits = ["Apple", "Orange", "Apple", "Mango"];
+// let position = fruits.lastIndexOf("Apple") + 0;
+
+// document.querySelector(".demo1").innerHTML =
+//   "Apple is found in position: " + position;
+
+// const numbers = [4, 9, 16, 25, 29];
+// let first = numbers.find(myFunction);
+
+// document.querySelector(".demo1").innerHTML =
+//   "First number over 18 is: " + first;
+
+// function myFunction(value, index, array) {
+//   return value > 18;
+// }
+
+// const numbers = [4, 9, 16, 25, 29];
+
+// document.querySelector(".demo1").innerHTML =
+//   "First number over 18 has index: " + numbers.findIndex(myFunction);
+
+// function myFunction(value, index, array) {
+//   return value > 18;
+// }
+
+// const numbers = [4, 9, 16, 25, 29];
+
+// document.querySelector(".demo1").innerHTML =
+//   "First number over 18 has index: " + numbers.findIndex(myFunction);
+
+// function myFunction(value, index, array) {
+//   return value > 18;
+// }
+
+// const myArr = Array.from("ABCDEFG");
+// document.querySelector(".demo1").innerHTML = myArr;
+
+// let myArray = Array.from("ABCDEFGHIGKJMNOP");
+// document.querySelector(".demo2").innerHTML = myArray;
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const keys = fruits.keys();
+
+// let text = "";
+// for (let x of keys) {
+//   text += x + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const keys = fruits.keys();
+
+// let text = "";
+// for (let x of keys) {
+//   text += x + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const f = fruits.entries();
+
+// for (let x of f) {
+//   document.querySelector(".demo1").innerHTML += x + "<br>";
+// }
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.querySelector(".demo1").innerHTML = fruits.includes("Mango");
+
+let fruit = ["Banana", "Orange", "Apple", "Mango"];
+document.querySelector(".demo2").innerHTML = fruit.includes("Banana");
+
+const q1 = ["Jan", "Feb", "Mar"];
+const q2 = ["Apr", "May", "Jun"];
+const q3 = ["Jul", "Aug", "Sep"];
+const q4 = ["Oct", "Nov", "May"];
+
+const year = [...q1, ...q2, ...q3, ...q4];
+document.querySelector(".demo1").innerHTML = year;
