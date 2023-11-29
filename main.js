@@ -2021,41 +2021,157 @@
 //     cars[2].year;
 // }
 
-const myArr = [
-  { name: "X00", price: 100 },
-  { name: "X01", price: 100 },
-  { name: "X02", price: 100 },
-  { name: "X03", price: 100 },
-  { name: "X04", price: 110 },
-  { name: "X05", price: 110 },
-  { name: "X06", price: 110 },
-  { name: "X07", price: 110 },
-  { name: "X08", price: 120 },
-  { name: "X09", price: 120 },
-  { name: "X10", price: 120 },
-  { name: "X11", price: 120 },
-  { name: "X12", price: 130 },
-  { name: "X13", price: 130 },
-  { name: "X14", price: 130 },
-  { name: "X15", price: 130 },
-  { name: "X16", price: 140 },
-  { name: "X17", price: 140 },
-  { name: "X18", price: 140 },
-  { name: "X19", price: 140 },
-];
+// const myArr = [
+//   { name: "X00", price: 100 },
+//   { name: "X01", price: 100 },
+//   { name: "X02", price: 100 },
+//   { name: "X03", price: 100 },
+//   { name: "X04", price: 110 },
+//   { name: "X05", price: 110 },
+//   { name: "X06", price: 110 },
+//   { name: "X07", price: 110 },
+//   { name: "X08", price: 120 },
+//   { name: "X09", price: 120 },
+//   { name: "X10", price: 120 },
+//   { name: "X11", price: 120 },
+//   { name: "X12", price: 130 },
+//   { name: "X13", price: 130 },
+//   { name: "X14", price: 130 },
+//   { name: "X15", price: 130 },
+//   { name: "X16", price: 140 },
+//   { name: "X17", price: 140 },
+//   { name: "X18", price: 140 },
+//   { name: "X19", price: 140 },
+// ];
 
-myArr.sort((p1, p2) => {
-  if (p1.price < p2.price) return -1;
-  if (p1.price > p2.price) return 1;
-  return 0;
-});
+// myArr.sort((p1, p2) => {
+//   if (p1.price < p2.price) return -1;
+//   if (p1.price > p2.price) return 1;
+//   return 0;
+// });
 
-let text = "";
-myArr.forEach(myFunction1);
+// let text = "";
+// myArr.forEach(myFunction1);
 
-function myFunction1(value) {
-  console.log("Function");
-  text += value.name + " " + value.price + "<br>";
+// function myFunction1(value) {
+//   console.log("Function");
+//   text += value.name + " " + value.price + "<br>";
+// }
+
+// document.querySelector(".demo1").innerHTML = text;
+
+// const number = [45, 4, 9, 16, 25];
+
+// function myFunction(value, index, array) {
+//   console.log(value);
+//   console.log(index);
+//   console.log(array);
+//   console.log("----------");
+// }
+// number.forEach(myFunction);
+
+// let digits = [20, 50, 40, 30, 10];
+
+// function myFunction(value, index, array) {
+//   console.log("Value: " + value);
+//   console.log("Index: " + index);
+//   console.log("Array: " + array);
+//   console.log("----------");
+// }
+
+// digits.forEach(myFunction);
+
+// const numbers = [45, 4, 9, 16, 25];
+
+// let text = "";
+// numbers.forEach(myFunction1);
+// document.querySelector(".demo1").innerHTML = text;
+
+// function myFunction1(value, index, array) {
+//   console.log("Function");
+//   text += value + "<br>";
+// }
+
+// const numbers = [45, 4, 9, 16, 25];
+// let text = "";
+// numbers.forEach(myFunction1);
+// document.querySelector(".demo1").innerHTML = text;
+
+// function myFunction1(value, index, array) {
+//   console.log(text);
+//   text += value + "<br>";
+// }
+
+// const numbers = [45, 4, 9, 16, 25];
+
+// let text = "";
+// numbers.forEach(myFunction1);
+// document.querySelector(".demo1").innerHTML = text;
+
+// function myFunction1(value) {
+//   text += value + "<br>";
+// }
+
+// const numbers = [45, 4, 9, 16, 25];
+
+// let text = "";
+// numbers.forEach(myFunction1);
+// document.querySelector(".demo1").innerHTML = text;
+
+// function myFunction1(value) {
+//   text += value + "<br>";
+// }
+
+// const numbers1 = [45, 4, 9, 16, 25];
+// const numbers2 = numbers1.map(myFunction);
+
+// document.querySelector(".demo1").innerHTML = numbers2;
+
+// function myFunction(value, index, array) {
+//   return value * 2;
+// }
+
+// const digits1 = [45, 4, 9, 16, 25];
+// document.querySelector(".demo2").innerHTML = digits1;
+// const digits2 = digits1.map(myFunction);
+
+// document.querySelector(".demo3").innerHTML = digits2;
+
+// function myFunction1(value, index, array) {
+//   return value * 2;
+// }
+
+// const numbers1 = [45, 4, 9, 16, 25];
+// const numbers2 = numbers1.map(myFunction);
+
+// document.querySelector(".demo1").innerHTML = numbers2;
+
+// function myFunction(value) {
+//   return value * 2;
+// }
+
+// const myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const newArr = myArr.flatMap((x) => x * 2);
+// document.querySelector(".demo1").innerHTML = newArr;
+
+// const digitArr = [1, 2, 3, 4, 5, 6];
+// const newdigitArr = digitArr.flatMap((x) => x * 2);
+// document.querySelector(".demo2").innerHTML = newdigitArr;
+
+const numbers = [45, 4, 9, 16, 25];
+const over18 = numbers.filter(myFunction);
+
+document.querySelector(".demo1").innerHTML = over18;
+
+function myFunction(value, index, array) {
+  return value > 18;
 }
 
-document.querySelector(".demo1").innerHTML = text;
+const numbers1 = [45, 6, 2, 7, 8, 10, 30];
+const over17 = numbers1.filter(myFunction);
+
+document.querySelector(".demo1").innerHTML = over17;
+
+function myFunction1(value, index, array) {
+  return value > 18;
+}
