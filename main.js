@@ -2361,16 +2361,430 @@
 //   document.querySelector(".demo1").innerHTML += x + "<br>";
 // }
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-document.querySelector(".demo1").innerHTML = fruits.includes("Mango");
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.querySelector(".demo1").innerHTML = fruits.includes("Mango");
 
-let fruit = ["Banana", "Orange", "Apple", "Mango"];
-document.querySelector(".demo2").innerHTML = fruit.includes("Banana");
+// let fruit = ["Banana", "Orange", "Apple", "Mango"];
+// document.querySelector(".demo2").innerHTML = fruit.includes("Banana");
 
-const q1 = ["Jan", "Feb", "Mar"];
-const q2 = ["Apr", "May", "Jun"];
-const q3 = ["Jul", "Aug", "Sep"];
-const q4 = ["Oct", "Nov", "May"];
+// const q1 = ["Jan", "Feb", "Mar"];
+// const q2 = ["Apr", "May", "Jun"];
+// const q3 = ["Jul", "Aug", "Sep"];
+// const q4 = ["Oct", "Nov", "May"];
 
-const year = [...q1, ...q2, ...q3, ...q4];
-document.querySelector(".demo1").innerHTML = year;
+// const year = [...q1, ...q2, ...q3, ...q4];
+// document.querySelector(".demo1").innerHTML = year;
+
+// const cars = ["Saab", "Volvo", "BMW"];
+// document.querySelector(".demo4").innerHTML = "Original Array: " + cars;
+
+// cars[0] = "Toyota";
+// document.querySelector(".demo5").innerHTML = "Change index: " + cars;
+
+// cars.push("Audi");
+// document.querySelector(".demo6").innerHTML = "Add items: " + cars;
+
+// cars = cars = ["Saab", "Volvo", "BMW"];
+// var cars;
+
+// document.querySelector(".demo1").innerHTML = cars[0];
+
+// const cars = ["Saab", "Volvo", "BMW"];
+// {
+//   const cars = ["Toyota", "Volvo", "BMW"];
+//   document.querySelector(".demo3").innerHTML = "Second Array: " + cars[0];
+// }
+// document.querySelector(".demo2").innerHTML = "First Array: " + cars[0];
+
+// var cars = ["Volvo", "BMW"];
+// var cars = ["Toyota", "BMW"];
+// cars = ["Volvo", "Saab"];
+// document.querySelector(".demo1").innerHTML = cars;
+
+// const d = new Date();
+// document.querySelector(".demo1").innerHTML = d;
+
+// const da = new Date("2022-03-25");
+// document.querySelector(".demo2").innerHTML = da;
+
+// const dat = new Date("Octobar 13, 2014 11:13:00");
+// document.querySelector(".demo3").innerHTML = dat;
+
+// const d = new Date("2022-03-25");
+// document.querySelector(".demo1").innerHTML = d;
+
+// const e = new Date(2018, 11, 24, 10, 33, 30, 0);
+// document.querySelector(".demo2").innerHTML = "new Date(year, month, ...)= " + e;
+
+// const f = new Date(2018, 11, 24, 10, 33, 30, 0);
+// document.querySelector(".demo3").innerHTML = f;
+
+// const d = new Date(2023, 11, 30, 11, 43, 30);
+// document.querySelector(".demo1").innerHTML = d;
+
+// const d = new Date(2023, 11, 30, 11, 45);
+// document.querySelector(".demo1").innerHTML = d;
+
+// const E = new Date(2023, 30, 11, 11);
+// document.querySelector(".demo2").innerHTML = E;
+
+// const d = new Date(2019);
+// document.querySelector(".demo1").innerHTML = d;
+
+// const c = new Date(99, 11, 24);
+// document.querySelector(".demo1").innerHTML = c;
+
+// const d = new Date("2015-03");
+// console.log(d);
+// document.querySelector(".demo1").innerHTML = d;
+
+// const a = new Date("2023-11-04");
+// document.querySelector(".demo1").innerHTML = a;
+
+// const d = new Date("2015-03-25T12:00:00z");
+// document.querySelector(".demo1").innerHTML = d;
+
+// document.querySelector(".demo2").innerHTML = new Date(
+//   "2023-11-30T12:00:00-06:00"
+// );
+// document.querySelector(".demo3").innerHTML = new Date("2023-11-30T12:00:00z");
+
+// const d = new Date("03/25/2023");
+// document.querySelector(".demo1").innerHTML = d;
+
+// document.querySelector(".demo2").innerHTML = new Date("11/30/2023");
+
+// document.querySelector(".demo3").innerHTML = new Date("2015-3-25");
+
+// const d = new Date("2023/11/30");
+// document.querySelector(".demo1").innerHTML = d;
+
+// document.querySelector(".demo2").innerHTML = new Date("25-11-2023");
+
+// const d = new Date("25-11-202");
+// document.querySelector(".demo1").innerHTML = d;
+
+// const d = new Date("Mar 25 2023");
+// document.querySelector(".demo1").innerHTML = d;
+
+// const d = new Date("25 Mar 2023");
+// document.querySelector(".demo1").innerHTML = d;
+
+// document.querySelector(".demo2").innerHTML = new Date("25 Mar 2023");
+
+// document.querySelector(".demo3").innerHTML = new Date("January 25 2023");
+
+// document.querySelector(".demo2").innerHTML = new Date("jan 30 2023");
+
+// document.querySelector(".demo1").innerHTML = new Date("JANUARY, 25, 2023");
+
+// document.querySelector(".demo1").innerHTML = Date.parse("March 21, 2023");
+
+// document.querySelector(".demo2").innerHTML = Date.parse("January 1, 1980");
+
+// let msec = Date.parse("March 21, 2012");
+// const d = new Date(msec);
+// document.querySelector(".demo3").innerHTML = d;
+
+// const d = new Date();
+// document.querySelector(".demo1").innerHTML = d;
+
+// const da = new Date("2021-03-25");
+// document.querySelector(".demo1").innerHTML = da.getFullYear();
+
+// const d = new Date();
+// document.querySelector(".demo2").innerHTML = d.getFullYear();
+
+// const da = new Date();
+// document.querySelector(".demo1").innerHTML = d.getFullYear();
+
+// const dat = new Date("2021-3-25");
+// document.querySelector(".demo3").innerHTML = d.getMonth() + 1;
+
+// const date = new Date();
+// document.querySelector(".demo1").innerHTML = date.getMonth() + 1;
+// console.log(date.getMonth() + 1);
+
+// const months = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+
+// const d = new Date("2021-03-25");
+// let month = months[d.getMonth()];
+// document.querySelector(".demo1").innerHTML = month;
+
+// console.log(d);
+// console.log(month);
+
+// const months = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+
+// const d = new Date("2021-03-25");
+// let month = months[d.getMonth()];
+// document.querySelector(".demo2").innerHTML = month;
+
+// const months = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+
+// const d = new Date();
+// let month = months[d.getMonth()];
+// document.querySelector(".demo1").innerHTML = month;
+
+// const da = new Date("2021-03-25");
+// document.querySelector(".demo2").innerHTML = da.getDate();
+
+// const d = new Date();
+// document.querySelector(".demo1").innerHTML = d.getDate();
+
+// const d = new Date("2021-03-25");
+// document.querySelector(".demo1").innerHTML =
+//   "Return the hours of a date as a number (0-23): " + d.getHours();
+
+// const da = new Date();
+// document.querySelector(".demo2").innerHTML =
+//   "Return the hours of a date as a number (0-23): " + da.getHours();
+
+// const d = new Date("2021-03-25");
+// document.querySelector(".demo1").innerHTML = d.getMinutes();
+
+// document.querySelector(".demo1").style.backgroundColor = "red";
+
+// function myFunction1() {
+//   console.log("Function click");
+//   document.querySelector(".demo1").style.fontSize = "40px";
+// }
+
+// document.querySelector(".demo1").style.fontSize = "30px";
+
+// document.querySelector(".demo2").style.color = "red";
+// const d = new Date("2021-03-25");
+// document.querySelector(".demo1").innerHTML = d.getMinutes();
+
+// const da = new Date();
+// document.querySelector(".demo2").innerHTML = da.getMinutes();
+
+// const dat = new Date();
+// document.querySelector(".demo3").innerHTML = dat.getMinutes();
+
+// const d = new Date();
+// document.querySelector(".demo1").innerHTML = d.getSeconds();
+
+// const da = new Date();
+// document.querySelector(".demo2").innerHTML = d.getSeconds();
+
+// const d = new Date();
+// document.querySelector(".demo1").innerHTML = d.getMilliseconds();
+
+// const da = new Date();
+// document.querySelector(".demo2").innerHTML = da.getMilliseconds();
+
+// const dat = new Date("2021-03-25");
+// document.querySelector(".demo3").innerHTML = d.getDate();
+
+// const date = new Date("2023-11-01");
+// document.querySelector(".demo3").innerHTML = date.getDay();
+
+// const d = new Date();
+// document.querySelector(".demo1").innerHTML = d.getDay();
+
+// const days = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday",
+// ];
+
+// const d = new Date();
+// let day = days[d.getDay()];
+
+// document.querySelector(".demo1").innerHTML = day;
+
+// const days = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday",
+// ];
+// const d = new Date();
+// let day = days[d.getDay()];
+// document.querySelector(".demo2").innerHTML = day;
+
+// console.log(d.getDay());
+
+// const days = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday",
+// ];
+
+// const d = new Date();
+// const date = days[d.getDay()];
+// document.querySelector(".demo1").innerHTML = date;
+
+// const days = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday",
+// ];
+// const d = new Date();
+// let day = days[d.getDay()];
+// document.querySelector(".demo1").innerHTML = day;
+
+// const days = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday",
+// ];
+
+// const d = new Date();
+// let day = days[d.getDay()];
+// document.querySelector(".demo1").innerHTML = day;
+
+// const d = new Date();
+// document.querySelector(".demo1").innerHTML = d.getTime();
+
+// const d = new Date();
+// document.querySelector(".demo1").innerHTML = d.getTime();
+
+// const da = new Date();
+// document.querySelector(".demo1").innerHTML = da.getTime();
+
+// const d = new Date();
+// document.querySelector(".demo2").innerHTML = d.getTime();
+
+// const date = Date.now();
+// document.querySelector(".demo1").innerHTML = date;
+
+// const data = Date.now();
+// document.querySelector(".demo2").innerHTML = data;
+
+// const minute = 1000 * 60;
+// const hour = minute * 60;
+// const day = hour * 24;
+// const year = day * 365;
+
+// let years = Math.round(Date.now() / year);
+// document.querySelector(".demo1").innerHTML = years;
+
+// const minute = 1000 * 60;
+// const hour = minute * 60;
+// const day = hour * 24;
+// const year = day * 365;
+
+// let years = Math.round(Date.now() / year);
+// document.querySelector(".demo1").innerHTML = years;
+
+// const d = new Date();
+// document.querySelector(".demo1").innerHTML = d.getTimezoneOffset();
+
+// try {
+//   const PI = 3.141592653589793;
+//   PI = 3.14;
+// } catch (err) {
+//   document.querySelector(".demo1").innerHTML = err;
+// }
+
+// const car = { type: "Fiat", model: "500", color: "white" };
+// car.color = "red";
+// car.owner = "Johnson";
+// document.querySelector(".demo1").innerHTML = "car owner is " + car.owner;
+
+// const car = {
+//   type: "Fiat",
+//   model: "600",
+//   color: "White",
+// };
+// car.color = "red";
+// car.owner = "Johnson";
+
+// document.querySelector(".demo1").innerHTML = "Car owner is: " + car.owner;
+
+// let x = 100;
+// x <<= 5;
+// console.log(x);
+
+// let y = 100;
+// y >>= 5;
+// console.log("Value of y is: " + y);
+
+// let x = -100;
+// x >>>= 5;
+// console.log("Value x is: " + x);
+// document.querySelector(".demo1").innerHTML = "Value of X is : " + x;
+
+// let y = 100;
+// y &= 5;
+// console.log("Value of y is: " + y);
+// document.querySelector(".demo2").innerHTML = "Value of y is: " + y;
+
+// let z = 100;
+// z |= 5;
+// document.querySelector(".demo3").innerHTML = "Value of z is: " + z;
+
+// let x = 10;
+// x ^= 50;
+// document.querySelector(".demo1").innerHTML = "Value of x is: " + x;
+
+// let y = 100;
+// y &&= 5;
+// document.querySelector(".demo2").innerHTML = "Value of x is: " + y;
+
+let z = undefined;
+z ||= 5;
+document.querySelector(".demo1").innerHTML = "Value of z is: " + z;
+
+let x;
+document.querySelector(".demo2").innerHTML = "Value of x is: " + (x ??= 5);
