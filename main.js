@@ -2782,9 +2782,198 @@
 // y &&= 5;
 // document.querySelector(".demo2").innerHTML = "Value of x is: " + y;
 
-let z = undefined;
-z ||= 5;
-document.querySelector(".demo1").innerHTML = "Value of z is: " + z;
+// let z = undefined;
+// z ||= 5;
+// document.querySelector(".demo1").innerHTML = "Value of z is: " + z;
 
-let x;
-document.querySelector(".demo2").innerHTML = "Value of x is: " + (x ??= 5);
+// let x;
+// document.querySelector(".demo2").innerHTML = "Value of x is: " + (x ??= 5);
+
+document.querySelector(
+  ".demo1"
+).innerHTML = `*JavaScript has 8 Datatypes* <br> 1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object`;
+console.log(` * 8 Datatypes* <br>  1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object`);
+
+document.querySelector(
+  ".demo2"
+).innerHTML = `*The Object Datatype* <br> 1. An object
+2. An array
+3. A date`;
+
+console.log(`*The Object Datatype* <br> 1. An object
+2. An array
+3. A date`);
+
+// let x = 16 + "Volvo";
+// document.querySelector(".demo1").innerHTML = x;
+
+// let answer1 = "It's alright";
+// console.log(answer1);
+
+// function myFunction(p1, p2) {
+//   return p1 * p2;
+// }
+// let result = myFunction(4, 3);
+// document.querySelector(".demo1").innerHTML = result;
+
+// function toCelsius(f) {
+//   return (5 / 9) * (f - 32);
+// }
+// let value = toCelsius(77);
+// document.querySelector(".demo1").innerHTML =
+//   "Converts from Fahrenheit to Celsius: " + value;
+
+// function toCelsius(f) {
+//   return (5 / 9) * (f - 32);
+// }
+// let value = toCelsius;
+// document.querySelector(".demo1").innerHTML = value;
+
+// function toCelsius(f) {
+//   return (5 / 9) * (f - 32);
+// }
+// let value = toCelsius;
+// document.querySelector(".demo1").innerHTML = value;
+
+// const parson = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   id: 58745,
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+// document.querySelector(".demo1").innerHTML = parson.fullName();
+
+// const person = {
+//   firstName: "Hazrat",
+//   lastname: "Ali",
+//   Age: 23,
+//   id: "8574698",
+//   fullName: function () {
+//     return this.firstName + " " + this.lastname + " " + this.Age;
+//   },
+// };
+
+// document.querySelector(".demo2").innerHTML = fullName;
+
+// function myFunction1() {
+//   let text = document.querySelector(".demo1").innerHTML;
+//   document.querySelector(".demo1").innerHTML = text.replace(
+//     "MICROSOFT",
+//     "W3Schools"
+//   );
+// }
+
+// function myFunction1() {
+//   let text = document.querySelector(".demo1").innerHTML;
+//   document.querySelector(".demo1").innerHTML = text.replace(
+//     "MICROSOFT",
+//     "W3Schools"
+//   );
+// }
+
+// let text = "I love cats. Cats are very easy to love. Cats are very popular.";
+// document.querySelector(".demo2").innerHTML = text;
+// text = text.replace("Cats", "Dogs");
+// text = text.replace("cats", "dogs");
+
+// document.querySelector(".demo3").innerHTML = text;
+
+// let text2 = text.toUpperCase();
+// document.querySelector(".demo1").innerHTML = text2;
+
+// let text3 = text.toLowerCase();
+// document.querySelector(".demo4").innerHTML = text3;
+
+// let numb = 5;
+// let text = numb.toString();
+// document.querySelector(".demo1").innerHTML = text.padStart(4, 0);
+
+// let text = "5";
+// text = text.padEnd(4, "0");
+
+// document.querySelector(".demo1").innerHTML = text;
+
+// let text = "The rain in SPAIN stays mainly in the plain";
+// const myArr = text.match("ain");
+// document.querySelector(".demo1").innerHTML = myArr;
+
+// let text = "The rain in SPAIN stays mainly in the plain";
+// const myArr = text.match(/ain/g);
+// document.querySelector(".demo1").innerHTML = myArr.length + " " + myArr;
+
+// let firstName = "Hazrat";
+// let lastName = "Ali";
+// let text = `Welcome ${firstName}, ${lastName}!`;
+// document.querySelector(".demo1").innerHTML = text;
+
+// let myNumber = 2;
+// let text = "";
+// while (myNumber != Infinity) {
+//   myNumber = myNumber * myNumber;
+//   text = text + myNumber + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// let myNumber = 32;
+// document.querySelector(".demo1").innerHTML =
+//   "Decimal 32 = " +
+//   "<br><br>" +
+//   "Hexatrigesimal (base 36): " +
+//   myNumber.toString(36) +
+//   "<br>" +
+//   "Duotrigesimal (base 32): " +
+//   myNumber.toString(32) +
+//   "<br>" +
+//   "Hexadecimal (base 16): " +
+//   myNumber.toString(16) +
+//   "<br>" +
+//   "Duodecimal (base 12): " +
+//   myNumber.toString(12) +
+//   "<br>" +
+//   "Decimal (base 10): " +
+//   myNumber.toString(10) +
+//   "<br>" +
+//   "Octal (base 8): " +
+//   myNumber.toString(8) +
+//   "<br>" +
+//   "Binary (base 2): " +
+//   myNumber.toString(2);
+
+// let x = Number.MAX_SAFE_INTEGER;
+// document.querySelector(".demo1").innerHTML = x;
+
+// document.querySelector(".demo1").innerHTML =
+//   Number.isInteger(10) + "<br>" + Number.isInteger(10.5);
+
+// let x = new Date("2023-09-12");
+// document.querySelector(".demo1").innerHTML = Number(x);
+
+// let a = "9007199254740991";
+// let b = " 9007199254740992";
+// console.log("Length of a is: " + a.length);
+// console.log("Length of b is: " + b.length);
+
+let x = Number.MIN_VALUE;
+document.querySelector(".demo1").innerHTML = x;
+
+let y = Number.MAX_SAFE_INTEGER;
+document.querySelector(".demo2").innerHTML = y;
+
+let z = Number.NEGATIVE_INFINITY;
+document.querySelector(".demo3").innerHTML = z;
