@@ -2969,11 +2969,274 @@ console.log(`*The Object Datatype* <br> 1. An object
 // console.log("Length of a is: " + a.length);
 // console.log("Length of b is: " + b.length);
 
-let x = Number.MIN_VALUE;
-document.querySelector(".demo1").innerHTML = x;
+// let x = Number.MIN_VALUE;
+// document.querySelector(".demo1").innerHTML = x;
 
-let y = Number.MAX_SAFE_INTEGER;
-document.querySelector(".demo2").innerHTML = y;
+// let y = Number.MAX_SAFE_INTEGER;
+// document.querySelector(".demo2").innerHTML = y;
 
-let z = Number.NEGATIVE_INFINITY;
-document.querySelector(".demo3").innerHTML = z;
+// let z = Number.NEGATIVE_INFINITY;
+// document.querySelector(".demo3").innerHTML = z;
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.querySelector(".demo1").innerHTML = fruits.toString();
+// console.log(typeof fruits);
+// document.querySelector(".demo2").innerHTML = fruits;
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let lenght = fruits.length;
+// document.querySelector(".demo1").innerHTML = lenght;
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let fruit = fruits[fruits.length - 4];
+// document.querySelector(".demo1").innerHTML = fruit;
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.querySelector(".demo1").innerHTML = fruits[fruits.length - 2];
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let fLen = fruits.length;
+
+// let text = "<ul>";
+// for (let i = 0; i < fLen; i++) {
+//   text += "<li>" + fruits[i] + "</li>";
+// }
+// text += "</ul>";
+// document.querySelector(".demo1").innerHTML = text;
+
+// const points = [40, 100, 1, 5, 25, 10];
+// document.querySelector(".demo1").innerHTML = points[0];
+
+// console.log(points[3]);
+
+// var points = new Array(40);
+// document.querySelector(".demo1").innerHTML = points;
+
+// const point = new Array(40);
+// document.querySelector(".demo2").innerHTML = point;
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.querySelector(".demo1").innerHTML = typeof fruits;
+
+// const fruits = ["Banana", "Orange", "Apple"];
+// document.querySelector(".demo1").innerHTML = Array.isArray(fruits);
+
+// const fruits = ["Banana", "Orange", "Apple"];
+// fruits instanceof Array;
+// document.querySelector(".demo1").innerHTML = fruits;
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.querySelector(".demo1").innerHTML = fruits.toString();
+
+// const fruit = ["Banana", "Orange", "Apple", "Mango"];
+// document.querySelector(".demo1").innerHTML = fruit.join("*");
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.querySelector(".demo1").innerHTML = fruits;
+// fruits.shift();
+
+// document.querySelector(".demo2").innerHTML = fruits;
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.querySelector(".demo1").innerHTML = fruits;
+// fruits.unshift("Lemon");
+
+// document.querySelector(".demo2").innerHTML = fruits;
+
+// const myGirls = ["Cecilie", "Lone"];
+// const myBoys = ["Emil", "Tobias", "Linus"];
+// const myChildren = myGirls.concat(myBoys);
+
+// document.querySelector(".demo1").innerHTML = myChildren;
+
+// const array1 = ["Cecilie", "Lone"];
+// const array2 = ["Emil", "Tobias", "Linus"];
+// const array3 = ["Robin", "Morgan"];
+
+// const myChildren = array1.concat(array2, array3);
+
+// document.querySelector(".demo1").innerHTML = myChildren;
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.querySelector(".demo1").innerHTML = fruits;
+
+// fruits.sort();
+// document.querySelector(".demo2").innerHTML = fruits;
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.querySelector(".demo1").innerHTML = fruits;
+
+// fruits.sort();
+// fruits.reverse();
+
+// document.querySelector(".demo2").innerHTML = fruits;
+
+// const points = [40, 100, 1, 5, 25, 10];
+// document.querySelector(".demo1").innerHTML = points;
+
+// function myFunction2() {
+//   points.sort();
+//   document.querySelector(".demo1").innerHTML = points;
+// }
+// function myFunction3() {
+//   points.sort(function (a, b) {
+//     return a - b;
+//   });
+//   document.querySelector(".demo1").innerHTML = points;
+// }
+
+// const points = [40, 100, 1, 5, 25, 10];
+// document.querySelector(".demo1").innerHTML = points;
+
+// function myFunction1() {
+//   points.sort();
+//   document.querySelector(".demo1").innerHTML = points;
+// }
+// function myFunction2() {
+//   points.sort(function (a, b) {
+//     return a - b;
+//   });
+//   document.querySelector(".demo1").innerHTML = points;
+// }
+
+// const points = [40, 100, 1, 5, 25, 10];
+// document.querySelector(".demo1").innerHTML = myArrayMax(points);
+
+// function myArrayMax(arr) {
+//   let len = arr.length;
+//   let max = -Infinity;
+//   while (len--) {
+//     if (arr[len] > max) {
+//       max = arr[len];
+//     }
+//   }
+//   return max;
+// }
+
+// const d = new Date();
+// d.setFullYear(2020);
+// document.querySelector(".demo1").innerHTML = d;
+
+// const c = new Date();
+// c.setFullYear(2020, 11, 3);
+// document.querySelector(".demo2").innerHTML = c;
+
+// const d = new Date();
+// d.setMonth(11);
+// document.querySelector(".demo1").innerHTML = d;
+
+// const da = new Date();
+// da.setDate(15);
+// document.querySelector(".demo2").innerHTML = da;
+
+// const d = new Date();
+// d.setDate(d.getDate() + 50);
+// document.querySelector(".demo1").innerHTML = d;
+
+// const d = new Date();
+// d.setHours(22);
+// document.querySelector(".demo1").innerHTML = d;
+
+// const d = new Date();
+// d.setMinutes(30);
+// document.querySelector(".demo1").innerHTML = d;
+
+// const da = new Date();
+// da.setSeconds(20);
+// document.querySelector(".demo2").innerHTML = da;
+
+// let text;
+// const today = new Date();
+// const someday = new Date();
+// someday.setFullYear(2100, 0, 14);
+
+// if (someday > today) {
+//   text = "Today is before january 14, 2100";
+// } else {
+//   Text = "Today is after january 14, 2100.";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// document.querySelector(".demo1").innerHTML =
+//   "<p><b>Math.E:</b> " +
+//   Math.E +
+//   "</p> " +
+//   "</br>" +
+//   "<p><b>Math.PI:</b> " +
+//   Math.PI +
+//   "</p>" +
+//   "</br>" +
+//   "<p><b>Math.SQRT2:</b> " +
+//   Math.SQRT2 +
+//   "</p>" +
+//   "</br>" +
+//   "<p><b>Math.SQRT1_2:</b> " +
+//   Math.SQRT1_2 +
+//   "</p>" +
+//   "</br>" +
+//   "<p><b>Math.LN2:</b> " +
+//   Math.LN2 +
+//   "</p>" +
+//   "</br>" +
+//   "<p><b>Math.LN10:</b> " +
+//   Math.LN10 +
+//   "</p>" +
+//   "</br>" +
+//   "<p><b>Math.LOG2E:</b> " +
+//   Math.LOG2E +
+//   "</p>" +
+//   "</br>" +
+//   "<p><b>Math.Log10E:</b> " +
+//   Math.LOG10E +
+//   "</p>";
+
+// document.querySelector(".demo1").innerHTML = Math.round(4.6);
+
+// document.querySelector(".demo2").innerHTML = "Round 4.3: " + Math.round(4.3);
+// console.log("Round 7.7: " + 7.7);
+
+// document.querySelector(".demo1").innerHTML = "Round 4.4: " + Math.ceil(4.4);
+
+// document.querySelector(".demo2").innerHTML = "Round 4.5: " + Math.ceil(4.5);
+
+// document.querySelector(".demo3").innerHTML = "Round 8.6: " + Math.ceil(8.6);
+
+// document.querySelector(".demo1").innerHTML = "Round -4.8: " + Math.ceil(-4.8);
+
+// document.querySelector(".demo2").innerHTML = "Round -2.8: " + Math.ceil(-2.1);
+
+// document.querySelector(".demo1").innerHTML = "Round 5.9: " + Math.ceil(5.9);
+
+// document.querySelector(".demo2").innerHTML = "Round - 3.9: " + Math.ceil(3.9);
+
+// document.querySelector(".demo3").innerHTML = "Round 8.10: " + Math.ceil(8.45);
+
+// document.querySelector(".demo1").innerHTML = "Math Ceil 4.4: " + Math.ceil(4.4);
+// document.querySelector(".demo2").innerHTML = "Math Ceil 4.3: " + Math.ceil(4.3);
+
+// document.querySelector(".demo3").innerHTML = "Math ceil 4.2: " + Math.ceil(4.2);
+
+// document.querySelector(".demo4").innerHTML = "Math ceil 4.1: " + Math.ceil(4.1);
+
+// document.querySelector(".demo5").innerHTML = "Math Ceil 4.0: " + Math.ceil(4.0);
+
+// document.querySelector(".demo6").innerHTML =
+//   "Math ceil -4.2; " + Math.ceil(-4.9);
+
+// document.querySelector(".demo1").innerHTML =
+//   "Math Trunc 4.9: " + Math.trunc(4.9);
+
+// document.querySelector(".demo2").innerHTML =
+//   "Math Trunc -5.9: " + Math.trunc(-5.2);
+
+// document.querySelector(".demo1").innerHTML = Math.sign(4);
+
+// document.querySelector(".demo1").innerHTML = "Math Sign -4: " + Math.sign(-4);
+
+// document.querySelector(".demo2").innerHTML = Math.pow(8, 2);
+
+// document.querySelector(".demo3").innerHTML = Math.pow(4, 2);
+
+document.querySelector(".demo1").innerHTML = Math.pow(4, 8);
+
+document.querySelector(".demo2").innerHTML = Math.pow(-4, 8);
