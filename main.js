@@ -3237,6 +3237,249 @@ console.log(`*The Object Datatype* <br> 1. An object
 
 // document.querySelector(".demo3").innerHTML = Math.pow(4, 2);
 
-document.querySelector(".demo1").innerHTML = Math.pow(4, 8);
+// document.querySelector(".demo1").innerHTML = Math.pow(4, 8);
 
-document.querySelector(".demo2").innerHTML = Math.pow(-4, 8);
+// document.querySelector(".demo2").innerHTML = Math.pow(-4, 8);
+
+// document.querySelector(".demo1").innerHTML = Math.sqrt(360);
+// document.querySelector(".demo2").innerHTML = "Sqrt 420: " + Math.sqrt(300);
+
+// document.querySelector(".demo1").innerHTML = "Math pow :" + Math.pow(3, 4);
+// document.querySelector(".demo2").innerHTML = "Math sqrt : " + Math.sqrt(4096);
+
+// document.querySelector(".demo3").innerHTML = "Math sqrt : " + Math.sqrt(81);
+
+// document.querySelector(".demo1").innerHTML = Math.abs(-8.7);
+
+// document.querySelector(".demo2").innerHTML = Math.abs(-154.6548);
+
+// document.querySelector(".demo1").innerHTML =
+//   "Math Sin: " + Math.sin((90 * Math.PI) / 180);
+
+// let value = Math.sin((120 * Math.PI) / 180);
+// document.querySelector(".demo2").innerHTML = value;
+
+// let value1 = Math.sin(5);
+// console.log("Math Sin: " + value1);
+
+// let value2 = Math.sin(-2);
+// console.log("Math Sin: " + value2);
+
+// let value3 = Math.sin(Infinity);
+// document.querySelector(".demo2").innerHTML = value3;
+
+// document.querySelector(".demo1").innerHTML = Math.cos((0 * Math.PI) / 180);
+
+// let value = Math.min(0, 150, 30, 20, -8, -200);
+// document.querySelector(".demo2").innerHTML = value;
+
+// document.querySelector(".demo3").innerHTML = Math.min(
+//   0,
+//   35,
+//   234,
+//   4344,
+//   -39484,
+//   -0,
+//   -3938
+// );
+
+// document.querySelector(".demo1").innerHTML = Math.max(
+//   20,
+//   400,
+//   384,
+//   393848,
+//   3484848,
+//   0
+// );
+
+// document.querySelector(".demo1").innerHTML = Math.random(20, 83);
+
+// document.querySelector(".demo2").innerHTML = Math.log(1);
+// document.querySelector(".demo3").innerHTML = Math.log(2);
+// document.querySelector(".demo4").innerHTML = Math.log(3);
+
+// document.querySelector(".demo5").innerHTML = Math.log(10);
+
+// document.querySelector(".demo1").innerHTML = Math.log2(8);
+
+// document.querySelector(".demo2").innerHTML = Math.log2(16);
+
+// document.querySelector(".demo3").innerHTML = Math.log2(32);
+
+// document.querySelector(".demo1").innerHTML = Math.log10(1000);
+
+// document.querySelector(".demo1").innerHTML = Math.round(1.499);
+
+// console.log(Math.floor(Math.random() * 10));
+
+// document.querySelector(".demo1").innerHTML = Math.floor(Math.random() * 10);
+
+// document.querySelector(".demo2").innerHTML = Math.floor(Math.random() * 10);
+
+// document.querySelector(".demo1").innerHTML = Math.floor(Math.random() * 11);
+
+// document.querySelector(".demo1").innerHTML = Math.floor(Math.random() * 12);
+
+// document.querySelector(".demo1").innerHTML = Math.floor(Math.random() * 14);
+
+// document.querySelector(".demo2").innerHTML = Math.floor(Math.random() * 100);
+
+// document.querySelector(".demo1").innerHTML = Math.floor(Math.random() * 10) + 1;
+
+// document.querySelector(".demo1").innerHTML =
+//   Math.floor(Math.random() * 100) + 1;
+
+// function myFunction1(min, max) {
+//   return Math.floor(Math.random() * (max - min)) + min;
+// }
+// document.querySelector(".demo1").innerHTML = myFunction1(0, 100);
+
+// function myFunction1() {
+//   document.querySelector(".demo1").innerHTML = getRndInteger(1, 10);
+// }
+
+// function getRndInteger(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// function RandomNumbe(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// console.log("RandomNumber: " + RandomNumbe(1, 6));
+
+// const Names = [
+//   "Hazrat",
+//   "Ali",
+//   "Mizan",
+//   "Rakib",
+//   "Hosen",
+//   "Hajjam",
+//   "Mahbub",
+//   "Sobuj",
+// ];
+// document.querySelector(".demo1").innerHTML = Names.sort();
+
+// const Roll = [5, 2, 6, 1, 3, 9, 7, 8, 10];
+// document.querySelector(".demo1").innerHTML = Roll;
+
+// document.querySelector(".demo2").innerHTML =
+//   "Roll Sorts: " +
+//   Roll.sort(function (a, b) {
+//     return a - b;
+//   });
+
+// document.querySelector(".demo3").innerHTML =
+//   "Roll Sorts: " +
+//   Roll.sort(function (a, b) {
+//     return b - a;
+//   });
+
+// function isLeapYear(year) {
+//   if (year % 400 === 0 || (year % 4 === 0 && year % 100 != 0)) {
+//     document.querySelector(".demo1").innerHTML = `${year} is a leap year!`;
+//   } else {
+//     document.querySelector(".demo1").innerHTML = `${year} is not a leap year!`;
+//   }
+// }
+// isLeapYear(2028);
+
+// function isLeapYear(year) {
+//   if (year % 400 === 0 || (year % 4 === 0 && year % 100 != 0)) {
+//     document.querySelector(".demo1").innerHTML = `${year} is a leap year.`;
+//   } else {
+//     document.querySelector(".demo1").innerHTML = `${year} is not a leap year.`;
+//   }
+// }
+// isLeapYear(2017);
+
+// const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+
+// function countVowels(sentence) {
+//   let count = 0;
+//   const letters = Array.from(sentence);
+
+//   letters.forEach(function (value) {
+//     if (vowels.includes(value)) {
+//       count++;
+//     }
+//   });
+//   return count;
+// }
+
+// document.querySelector(".demo1").innerHTML =
+//   "Vowel Count : " +
+//   countVowels("I love Bangladesh. I am a Bangladeshi People");
+
+// console.log(
+//   "Vowel count is: " +
+//     countVowels("I love Bangladesh. I am a Bangladeshi People")
+// );
+
+// const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+
+// function countVowels(sentence) {
+//   let count = 0;
+//   const letters = Array.from(sentence);
+
+//   letters.forEach(function (value) {
+//     if (vowels.includes(value)) {
+//       count++;
+//     }
+//   });
+//   return count;
+// }
+
+// document.querySelector(".demo1").innerHTML =
+//   "Vowel Digits: " +
+//   countVowels(
+//     "Bangladesh is a Beautiful Country. Bangladeshe people are veray dengarus"
+//   );
+
+// const numbers = [1, 5, 1, 3, 4, 3, 5, 7, 4, 2, 6, 7, 8, 10, 8, 10];
+// const duplicates = numbers.filter(function (value, index, array) {
+//   return array.indexOf(value) != index;
+// });
+// document.querySelector(".demo1").innerHTML = duplicates;
+
+// const number = [1, 5, 1, 3, 2, 4, 3, 5, 7, 4, 2, 6, 7, 8, 10, 8, 10];
+// const unickNumber = number.filter(function (value, index, array) {
+//   return array.indexOf(value) === index;
+// });
+// document.querySelector(".demo2").innerHTML = unickNumber;
+
+// document.querySelector(".demo1").innerHTML = "The Value is: " + Boolean(10 > 9);
+
+// document.querySelector(".demo2").innerHTML =
+//   "The Value is: " + Boolean(20 < 30);
+
+// let x = 0;
+// document.querySelector(".demo1").innerHTML = "Value of 0 is: " + Boolean(x);
+
+// let y = -0;
+// document.querySelector(".demo2").innerHTML =
+//   "The value of -0 is: " + Boolean(y);
+
+// let a;
+// document.querySelector(".demo3").innerHTML = Boolean(a);
+
+// let x = null;
+// document.querySelector(".demo1").innerHTML = Boolean(x);
+
+// let y = false;
+// document.querySelector(".demo1").innerHTML = Boolean(y);
+
+// let x = 5;
+// document.querySelector(".demo1").innerHTML = x == 8;
+
+// let a = 5;
+// document.querySelector(".demo2").innerHTML = a == 5;
+
+// let x = "5";
+// document.querySelector(".demo1").innerHTML = x == 5;
+
+let x = 5;
+document.querySelector(".demo1").innerHTML = x === 5;
+
+let a = 5;
+document.querySelector(".demo1").innerHTML = x === "5";
