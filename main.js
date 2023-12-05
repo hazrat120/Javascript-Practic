@@ -3478,8 +3478,235 @@ console.log(`*The Object Datatype* <br> 1. An object
 // let x = "5";
 // document.querySelector(".demo1").innerHTML = x == 5;
 
-let x = 5;
-document.querySelector(".demo1").innerHTML = x === 5;
+// let x = 5;
+// document.querySelector(".demo1").innerHTML = x === 5;
 
-let a = 5;
-document.querySelector(".demo1").innerHTML = x === "5";
+// let a = 5;
+// document.querySelector(".demo1").innerHTML = x === "5";
+
+// let x = 5;
+// document.querySelector(".demo1").innerHTML = x != 8;
+
+// let a = 5;
+// document.querySelector(".demo1").innerHTML = a !== 5;
+
+// let x = 5;
+// document.querySelector(".demo1").innerHTML = x !== "5";
+
+// let y = 5;
+// document.querySelector(".demo2").innerHTML = y !== 8;
+
+// let age = 18;
+// if (age < 18) Text = "Too young to busy alcohol";
+// document.querySelector(".demo1").innerHTML = age;
+
+// let x = 6;
+// let y = 3;
+// document.querySelector(".demo1").innerHTML =
+//   (x < 10 && y > 1) + "<br>" + (x < 10 && y < 1);
+
+// let a = y < 1;
+// document.querySelector(".demo2").innerHTML = a;
+
+// let x = 6;
+// let y = 3;
+
+// document.querySelector(".demo1").innerHTML =
+//   (x == 5 || y == 5) +
+//   "<br>" +
+//   (x == 6 || y == 0) +
+//   "<br>" +
+//   (x == 0 || y == 3) +
+//   "<br>" +
+//   (x == 6 || y == 3);
+
+// function myFunction4() {
+//   console.log("Function On");
+//   let age = document.querySelector(".inp_1").value;
+//   let voteable = age < 18 ? "Too young" : "Old enough";
+//   document.querySelector(".demo7").innerHTML = voteable + " to vote.";
+// }
+
+// function myFunction4() {
+//   let age = document.querySelector(".inp_1").ariaValueMax;
+//   let voteable = age < 18 ? "Too yound" : "Old enough";
+//   document.querySelector(".demo7").innerHTML = voteable + "to vote";
+// }
+
+// document.querySelector(".demo1").innerHTML = 2 < "12";
+// document.querySelector(".demo2").innerHTML = "2" < "12";
+
+// function myFunction4() {
+//   let voteable;
+//   let age = Number(document.querySelector(".inp_1").value);
+//   if (isNaN(age)) {
+//     voteable = "Input is not a  number";
+//   } else {
+//     voteable = age < 18 ? "Too young" : "Old enough";
+//   }
+//   document.querySelector(".demo7").innerHTML = voteable + "to vote";
+// }
+
+// function myFunction4() {
+//   let voteable;
+//   let age = Number(document.querySelector(".inp_1").value);
+//   if (isNaN(age)) {
+//     voteable = "Input is not a number";
+//   } else {
+//     voteable = age < 18 ? "Too young" : "Old enough";
+//   }
+//   document.querySelector(".demo7").innerHTML = voteable + "to vote";
+// }
+
+// function myFunction4() {
+//   let voteable;
+//   let age = Number(document.querySelector(".inp_1").value);
+//   if (isNaN(age)) {
+//     voteable = "Input is not a number";
+//   } else {
+//     voteable = age < 18 ? "Too yound" : "Old enoung";
+//   }
+//   document.querySelector(".demo7").innerHTML = voteable + "to vote";
+// }
+
+// let name = null;
+// let text = "Missng";
+// let result = name ?? text;
+// document.querySelector(".demo1").innerHTML = "The name is: " + result;
+
+// let age = 18;
+
+// console.log(
+//   age >= 18
+//     ? age < 30
+//       ? "You are an adult!"
+//       : "You are old!"
+//     : "You are young!"
+// );
+
+// let age2 = 11;
+// document.querySelector(".demo7").innerHTML =
+//   age2 >= 18 ? "You are and adult!" : "You are an Child";
+
+// let age = 12;
+// age = Number(age);
+// if (isNaN(age)) {
+//   console.log("Input is not a number!");
+// } else {
+//   console.log(age < 18 ? "Too young" : "Old enough");
+// }
+
+// console.log("Value: " + ("5" == 5));
+// console.log("Value: " + ("5" === 5));
+
+// let age = 32;
+
+// age = Number(age);
+// if (isNaN(age)) {
+//   console.log("Input is not a number");
+// } else {
+//   console.log(age <= 18 ? "Too young" : "Old enough");
+// }
+
+// document.querySelector(".demo1").innerHTML = 2 < 12;
+
+// document.querySelector(".demo2").innerHTML = "2" > "12";
+
+// document.querySelector(".demo1").innerHTML = 2 > "Ali";
+
+// document.querySelector(".demo1").innerHTML = "2" > "12";
+
+// let name = null;
+// let text = "Missing";
+// let result = name ?? text;
+// document.querySelector(".demo1").innerHTML = "The name is :" + result;
+
+// const car = { type: "Fiat", model: "500", color: "white" };
+// let name = car?.name;
+// document.querySelector(".demo1").innerHTML = name;
+
+// if (15 > 15) {
+//   console.log("Yes, It is");
+// } else {
+//   console.log("No, It's not");
+// }
+
+// let grade;
+// let score = 15;
+
+// if (score <= 5) {
+//   grade = "F";
+// } else if (score <= 10) {
+//   grade = "E";
+// } else if (score <= 15) {
+//   grade = "D";
+// } else if (score <= 20) {
+//   grade = "C";
+// } else if (score <= 25) {
+//   grade = "B";
+// } else {
+//   grade = "A";
+// }
+
+// console.log(grade);
+
+// if (15 >= 15) {
+//   console.log("Yes, It is");
+// } else {
+//   console.log("No, Its not");
+// }
+
+// let x = "0";
+// switch (x) {
+//   case 0:
+//     console.log("off");
+//     break;
+//   case 1:
+//     console.log("On");
+//     break;
+//   default:
+//     console.log("No value found");
+// }
+
+// let accessories = ["Mouse", "Keyboard", "Headphone", "Monitor", "Cable"];
+// document.querySelector(".demo1").innerHTML = accessories;
+// let b = accessories.reverse();
+// document.querySelector(".demo2").innerHTML = b;
+
+// if (15 >= 15) {
+//   console.log("Yes, It is");
+// } else {
+//   console.log("No, Its not");
+// }
+
+// let accessories = ["Mouse", "Keyboard", "Headphone", "Monitor", "Cable"];
+// console.log(accessories.pop());
+
+// const fruit = "Mangoes";
+// switch (fruit) {
+//   case "Orange":
+//     console.log("Oranges are $0.59 a pound");
+//     break;
+//   case "Mangoes":
+//   case "Papayas":
+//     console.log("Mangoes and Papayas are $2.79 a pound.");
+//     break;
+//   default:
+//     console.log("Sorry, We are out of Stoke");
+// }
+
+// var year = 2020;
+// if (true) {
+//   console.log(year);
+//   let year = 2021;
+// }
+
+// const person = {
+//   firstName: "Johan",
+//   lastName: "Doe",
+//   id: "5566",
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+// console.log(person.fullName());
