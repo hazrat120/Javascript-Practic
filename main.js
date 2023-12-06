@@ -3710,3 +3710,400 @@ console.log(`*The Object Datatype* <br> 1. An object
 //   },
 // };
 // console.log(person.fullName());
+
+// let hour = 19;
+// if (hour < 18) {
+//   greeting = "Good day";
+// }
+
+// if (new Date().getHours() < 18) {
+//   document.querySelector(".demo1").innerHTML = "Good day!";
+// }
+
+// if (new Date().getHours() < 18) {
+//   document.querySelector(".demo1").innerHTML = "Good day!";
+// } else {
+//   document.querySelector(".demo1").innerHTML = "Hello";
+// }
+
+// const hour = new Date().getHours();
+// let greeting;
+
+// if (hour < 18) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good Evening";
+// }
+
+// document.querySelector(".demo1").innerHTML = greeting;
+
+// const hour = new Date().getHours();
+// let greeting;
+// if (hour <= 18) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good Evening";
+// }
+
+// document.querySelector(".demo1").innerHTML = greeting;
+
+const time = new Date().getHours();
+let greeting;
+
+// if (time < 10) {
+//   greeting = "Good Morning";
+// } else if (time < 20) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good evening";
+// }
+// document.querySelector(".demo1").innerHTML = greeting;
+
+// const hours = new Date().getHours();
+// let greetin;
+// if (hours < 10) {
+//   greetin = "Good Morning";
+// } else if (hours < 20) {
+//   greetin = "Good day";
+// } else {
+//   greetin = "Good evening";
+// }
+// document.querySelector(".demo1").innerHTML = greetin;
+
+// let text;
+// if (Math.random() < 0.5) {
+//   text = "<a href='https://w3schools.com'>Visit W3Schools</a>";
+// } else {
+//   text = "<a href='https://wwf.org'>Visit WWF</a>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// let txt;
+// if (Math.random() < 0.3) {
+//   txt = "<a href='https://w3schools.com'>Visit W3Schools</a>";
+// } else if (Math.random() < 0.5) {
+//   txt =
+//     "<a href='https://www.w3schools.com/js/tryit.asp?filename=tryjs_randomlink'> W3Schools</a>";
+// } else {
+//   txt = "<a href='https://wwf.org'>Visit WWF</a>";
+// }
+// document.querySelector(".demo1").innerHTML = txt;
+
+// let day = new Date().getDay();
+// let day;
+// switch (new Date().getDay()) {
+//   case 0:
+//     day = "sunday";
+//     break;
+//   case 1:
+//     day = "Monday";
+//     break;
+//   case 2:
+//     day = "Tuesday";
+//     break;
+//   case 3:
+//     day = "Wednesday";
+//     break;
+//   case 4:
+//     day = "Thursday";
+//     break;
+//   case 5:
+//     day = "Friday";
+//     break;
+//   case 6:
+//     day = "Saturday";
+// }
+
+// document.querySelector(".demo1").innerHTML = day;
+
+// let day;
+// switch (new Date().getDay()) {
+//   case 0:
+//     day = "Sunday";
+//     break;
+//   case 1:
+//     day = "Monday";
+//     break;
+//   case 2:
+//     day = "Tuesday";
+//     break;
+//   case 3:
+//     day = "Wednesday";
+//     break;
+//   case 4:
+//     day = "Thues day";
+//     break;
+//   case 5:
+//     day = "Friday";
+//     break;
+//   case 6:
+//     day = "Saturday";
+// }
+
+// document.querySelector(".demo1").innerHTML = day;
+
+// let text;
+// switch (new Date().getDay()) {
+//   case 6:
+//     text = "Today is saturda";
+//     break;
+//   case 0:
+//     text = "Today is sunda";
+//     break;
+//   default:
+//     text = "Looking forward to the weekend";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// let text;
+// switch (new Date().getDay()) {
+//   case 6:
+//     text = "Today is Saturday";
+//     break;
+//   default:
+//     text = "Looking forward to the weekend";
+//     break;
+//   case 0:
+//     text = "Today is sunday";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// let text;
+// switch (new Date().getDay()) {
+//   case 4:
+//   case 5:
+//     text = "Soon it is Weekend";
+//     break;
+//   case 0:
+//   case 6:
+//     text = "It is Weekend";
+//     break;
+//   default:
+//     text = "Looking forward to the Weekend";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// let text;
+// let x = 45;
+// switch (x) {
+//   case 0:
+//     text = "Off";
+//     break;
+//   case 1:
+//     text = "On";
+//     break;
+//   default:
+//     text = "No value found";
+// }
+
+// document.querySelector(".demo1").innerHTML = text;
+
+// let fruits = "banana";
+// switch (fruits) {
+//   case "Banana":
+//     alert("Hello");
+//     break;
+//   case "Apple":
+//     alert("Welcome");
+//     break;
+// }
+// document.querySelector(".demo1").innerHTML = fruits;
+
+// let cars = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"];
+// let text = " ";
+// for (i = 0; i < cars.length; i++) {
+//   text += cars[i] + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// let cars = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"];
+// let text = " ";
+// for (i = 0; i < cars.length; i++) {
+//   text += cars[i] + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+// let text = "  ";
+// for (i = 0; i < cars.length; i++) {
+//   text += cars[i] + "<br>";
+// }
+// document.querySelector(".demo2").innerHTML = +text;
+
+// let text = " ";
+// for (i = 0; i < 5; i++) {
+//   text += "The number is: " + i + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let i, len, text;
+// for (i = 0, len = cars.length, text = ""; i < len; i++) {
+//   text += cars[i] + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let i, len, text;
+// for (i = 0, len = cars.length, text = ""; i < len; i++) {
+//   text += cars[i] + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let i = 2;
+// let len = cars.length;
+// let text = "";
+// for (; i < len; i++) {
+//   text += cars[i] + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let i = 2;
+// let len = cars.length;
+// let text = " ";
+
+// for (; i < len; i++) {
+//   text += cars[i] + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let i = 0;
+// let len = cars.length;
+// let text = "";
+// for (; i < len; ) {
+//   text += cars[i] + "<br>";
+//   i++;
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// var i = 5;
+// for (var i = 0; i < 10; i++) {
+//   document.querySelector(".demo1").innerHTML = " Truth will prevail";
+// }
+// document.querySelector(".demo1").innerHTML = i;
+// document.querySelector(".demo1").innerHTML = "I hobe you will be happay";
+
+// let i = 5;
+// for (let i = 0; i < 10; i++) {
+//   console.log("Print");
+// }
+// document.querySelector(".demo1").innerHTML = i;
+
+// const person = { fname: "John", lname: "Doe", age: 25 };
+// let text = " ";
+// for (let x in person) {
+//   text += person[x] + " ";
+// }
+
+// document.querySelector(".demo1").innerHTML = text;
+
+// const persons = { fname: "John", lname: "Doe", age: 25 };
+// let txt = " ";
+// for (let x in persons) {
+//   txt += persons[x] + " ";
+// }
+// document.querySelector(".demo2").innerHTML = txt;
+
+// const student = {
+//   name: "Monica",
+//   class: 7,
+//   age: 12,
+// };
+// for (let key in student) {
+//   console.log(`${key} => ${student[key]}`);
+// }
+
+// const names = {
+//   name1: "Hazrat",
+//   name2: "Mizan",
+//   name3: "Hosen",
+//   name4: "Ali",
+//   age: 23,
+// };
+// for (let key in names) {
+//   document.querySelector(".demo1").innerHTML = `${key} ==> ${names[key]}`;
+//   console.log(`${key} ==> ${names[key]}`);
+// }
+
+// const salaries = {
+//   Jack: 24000,
+//   Paul: 34000,
+//   Monica: 55000,
+// };
+
+// for (let i in salaries) {
+//   let salary = "$" + salaries[i];
+//   console.log(`${i} : ${salary}`);
+// }
+
+// const string = "Hazrat Ali";
+// let text = string.length;
+// for (let i in string) {
+//   console.log(i, string[i]);
+// }
+
+// const numbers = [45, 4, 9, 16, 25];
+// let text = "";
+// for (let x in numbers) {
+//   text += numbers[x] + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const numbers = [45, 4, 9, 16, 25];
+
+// let text = " ";
+// numbers.forEach(myFunction);
+// document.querySelector(".demo1").innerHTML = text;
+
+// function myFunction(value, index, array) {
+//   text += value + "<br>";
+// }
+
+// const numbers = [45, 4, 9, 16, 25];
+// let text = "";
+// numbers.forEach(myFunction);
+// document.querySelector(".demo1").innerHTML = text;
+
+// function myFunction(value, index, array) {
+//   text += value + "<br>";
+// }
+
+// const numbers = [45, 4, 9, 16, 25];
+// let text = "";
+// numbers.forEach(myFunction);
+// document.querySelector(".demo1").innerHTML = text;
+
+// function myFunction(value) {
+//   text += value + "<br>";
+// }
+
+// for (let i = 0; i < 10; i++) {
+//   console.log(i);
+// }
+
+// document.querySelector(".demo1").innerHTML = Math.round(100.495);
+
+// let fruits = ["A", "B", "C", "D", "E", "F", "G", "H"];
+// // fruits.reverse();
+// for (let fruit of fruits) {
+//   console.log(fruit);
+// }
+
+// const cars = ["BMW", "Volvo", "Mini"];
+// let text = "";
+// for (let x of cars) {
+//   text += x + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// let language = "JavaScript";
+
+// let text = " ";
+// for (let x of language) {
+//   text += x + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
