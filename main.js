@@ -4107,3 +4107,346 @@ let greeting;
 //   text += x + "<br>";
 // }
 // document.querySelector(".demo1").innerHTML = text;
+
+// let text = "";
+// let i = 0;
+// while (i < 10) {
+//   text += "<br> The number is " + i;
+// }
+
+// document.querySelector(".demo1").innerHTML = text;
+
+// let text = " ";
+// let i = 0;
+// while (i < 10) {
+//   text += "<br> The number is " + i;
+//   i++;
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// let text = "";
+// let i = 0;
+// do {
+//   text += "The number is " + i + "<br>";
+//   i++;
+// } while (i < 10);
+
+// document.querySelector(".demo1").innerHTML = text;
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+
+// let i = 0;
+// let text = "";
+
+// for (; cars[i]; ) {
+//   text += cars[i] + "<br>";
+//   i++;
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// let text = "";
+// let i = 0;
+
+// do {
+//   text += "<br> The number is " + i;
+//   i++;
+// } while (i < 10);
+// document.querySelector(".demo1").innerHTML = text;
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let i = 0;
+// let text = "";
+// for (; cars[i]; ) {
+//   text += cars[i] + "<br>";
+//   i++;
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let i = 0;
+// let text = "";
+// while (cars[i]) {
+//   text += cars[i] + "<br>";
+//   i++;
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// let text = " ";
+// for (let i = 0; i < 10; i++) {
+//   if (i == 3) {
+//     break;
+//   }
+//   text += "The number is: " + i + "<br>";
+// }
+
+// document.querySelector(".demo1").innerHTML = text;
+
+// let text = "";
+// for (let i = 0; i < 10; i++) {
+//   if (i === 3) {
+//     break;
+//   }
+//   text += "The number is " + i + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// let text = "";
+// for (let i = 0; i < 10; i++) {
+//   if (i === 3) {
+//     continue;
+//   }
+//   text += "The number is: " + i + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// let text = "";
+// for (let i = 0; i < 10; i++) {
+//   if (i === 3) {
+//     continue;
+//   }
+//   text += "The number is: " + i + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let text = " ";
+
+// list: {
+//   text += cars[0] + "<br>";
+//   text += cars[1] + "<br>";
+//   break list;
+//   text += cars[2] + "<br>";
+//   text += cars[3] + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const letters = new Set(["a", "b", "c"]);
+// let text = "";
+// for (const x of letters) {
+//   text += x + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const letters = new Set(["a", "b", "c"]);
+
+// let text = "";
+// for (const x of letters) {
+//   text += x + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const fruit = new Map([
+//   ["Apples", 500],
+//   ["bananas", 300],
+//   ["oranges", 200],
+// ]);
+
+// let text = "";
+// for (const x of fruit) {
+//   text += x + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const letters = new Set(["a", "b", "c", "d", "e", "f"]);
+
+// document.querySelector(".demo1").innerHTML = letters.size;
+// console.log(letters);
+
+// const lett = new Set(["A", "B", "C", "D", "E", "F", "G"]);
+// console.log(lett);
+
+// const letters = new Set(["A", "B", "C", "D", "E", "F", "G"]);
+
+// letters.add("a");
+// letters.add("b");
+// letters.add("c");
+// letters.add("d");
+// console.log(letters);
+
+// const letters = new Set();
+
+// let a = "A";
+// let b = "B";
+// let c = "C";
+// let d = "D";
+
+// letters.add(a);
+// letters.add(b);
+// letters.add(c);
+// letters.add(d);
+// console.log(letters);
+
+// const letters = ["a", "b", "c", "d", "e", "f"];
+// let text = "";
+
+// letters.forEach(function (value) {
+//   text += value + "<br>";
+// });
+// console.log(text)
+// document.querySelector(".demo1").innerHTML = text;
+
+// const letters = new Set(["a", "b", "c", "d", "e", "f", "a", "b", "d"]);
+
+// let text = "";
+
+// letters.forEach(function (value) {
+//   text += value + "<br>";
+// });
+
+// console.log(text);
+// document.querySelector(".demo1").innerHTML = text;
+
+// const letters = new Set(["a", "b", "c"]);
+
+// document.querySelector(".demo1").innerHTML = letters.values();
+
+// const letters = new Set(["a", "b", "c", "d", "e", "f", "a", "b", "d"]);
+
+// document.querySelector(".demo1").innerHTML = letters.values();
+
+// console.log(letters.values());
+
+// const letters = new Set(["a", "b", "c", "d", "e", "f", "a", "b", "d"]);
+
+// let text = "";
+// for (const x of letters.values()) {
+//   text += x + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+// console.log(text);
+
+// const letters = new Set(["a", "b", "c", "d", "e", "f", "a", "b", "d"]);
+// let text = "";
+// for (const x of letters.values()) {
+//   text += x + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+// console.log(text);
+
+// const fruits = new Map([
+//   ["Apples", 500],
+//   ["Bananas", 300],
+//   ["Oranges", 200],
+//   ["Mango", 150],
+//   ["Papaya", 250],
+// ]);
+
+// console.log(fruits);
+// document.querySelector(".demo1").innerHTML = fruits.get("Apples");
+// document.querySelector(".demo2").innerHTML = fruits;
+
+// const names = new Map([
+//   ["Name: ", "Age"],
+//   ["Hazrat", 23],
+//   ["Ali", 23],
+//   ["Mizan", 22],
+//   ["Rakib", 22],
+//   ["Hosen", 23],
+//   ["Hajjam", 24],
+// ]);
+
+// document.querySelector(".demo1").innerHTML = names.get("Hajjam");
+// console.log(names);
+
+// const fruits = new Map();
+
+// fruits.set("Apples", 500);
+// fruits.set("Bananas", 400);
+// fruits.set("Oranges", 600);
+// fruits.set("Painaaple", 200);
+// fruits.set("Papaya", 300);
+// fruits.set("Lemon", 1000);
+
+// document.querySelector(".demo1").innerHTML = fruits;
+// console.log(fruits);
+// document.querySelector(".demo2").innerHTML = fruits.get("Lemon");
+
+// const fruit = new Map();
+// fruit.set("Apples", 600);
+// fruit.set("Bananas", 200);
+// fruit.set("Oranges", 400);
+// fruit.set("Painaaple", 700);
+
+// console.log(fruit);
+// document.querySelector(".demo1").innerHTML = fruit.get("Apples");
+// document.querySelector(".demo2").innerHTML = fruit.size;
+// document.querySelector(".demo3").innerHTML = fruit.delete("Apples");
+// console.log(fruit.delete("Bananas"));
+
+// const fruits = new Map([
+//   ["Apples", 500],
+//   ["Bananas", 300],
+//   ["Oranges", 400],
+//   ["Lemons", 700],
+// ]);
+// console.log(fruits);
+// fruits.delete("Oranges");
+// document.querySelector(".demo3").innerHTML = fruits.has("Apple");
+// document.querySelector(".demo2").innerHTML = fruits.has("Lemons");
+
+// const fruits = new Map([
+//   ["apples", 500],
+//   ["bananas", 300],
+//   ["oranges", 200],
+// ]);
+
+// let text = " ";
+// fruits.forEach(function (value, key) {
+//   text += key + " = " + value + "<br>";
+// });
+// document.querySelector(".demo1").innerHTML = text;
+
+// const fruits = new Map([
+//   ["apples", 500],
+//   ["bananas", 300],
+//   ["oranges", 200],
+// ]);
+
+// let text = "";
+// for (const x of fruits.entries()) {
+//   text += x + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const fruits = new Map([
+//   ["apples", 500],
+//   ["bananas", 300],
+//   ["oranges", 200],
+// ]);
+
+// let text = " ";
+// for (const x of fruits.entries()) {
+//   text += x + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+document.querySelector(".demo1").innerHTML =
+  "'John' is " +
+  typeof "John" +
+  "<br>" +
+  "3.14 is " +
+  typeof 3.14 +
+  "<br>" +
+  "NaN is " +
+  typeof NaN +
+  "<br>" +
+  "false is " +
+  typeof false +
+  "<br>" +
+  "[1, 2, 3, 4] is " +
+  typeof [1, 2, 3, 4] +
+  "<br>" +
+  "{name:'John', age:34} is " +
+  typeof { name: "John", age: 34 } +
+  "<br>" +
+  "new Date() is " +
+  typeof new Date() +
+  "<br>" +
+  "function () {} is " +
+  typeof function () {} +
+  "<br>" +
+  "myCar is " +
+  typeof myCar +
+  "<br>" +
+  "null is " +
+  typeof null;
