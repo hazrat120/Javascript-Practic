@@ -4420,33 +4420,322 @@ let greeting;
 // }
 // document.querySelector(".demo1").innerHTML = text;
 
-document.querySelector(".demo1").innerHTML =
-  "'John' is " +
-  typeof "John" +
-  "<br>" +
-  "3.14 is " +
-  typeof 3.14 +
-  "<br>" +
-  "NaN is " +
-  typeof NaN +
-  "<br>" +
-  "false is " +
-  typeof false +
-  "<br>" +
-  "[1, 2, 3, 4] is " +
-  typeof [1, 2, 3, 4] +
-  "<br>" +
-  "{name:'John', age:34} is " +
-  typeof { name: "John", age: 34 } +
-  "<br>" +
-  "new Date() is " +
-  typeof new Date() +
-  "<br>" +
-  "function () {} is " +
-  typeof function () {} +
-  "<br>" +
-  "myCar is " +
-  typeof myCar +
-  "<br>" +
-  "null is " +
-  typeof null;
+// document.querySelector(".demo1").innerHTML =
+//   "'John' is " +
+//   typeof "John" +
+//   "<br>" +
+//   "3.14 is " +
+//   typeof 3.14 +
+//   "<br>" +
+//   "NaN is " +
+//   typeof NaN +
+//   "<br>" +
+//   "false is " +
+//   typeof false +
+//   "<br>" +
+//   "[1, 2, 3, 4] is " +
+//   typeof [1, 2, 3, 4] +
+//   "<br>" +
+//   "{name:'John', age:34} is " +
+//   typeof { name: "John", age: 34 } +
+//   "<br>" +
+//   "new Date() is " +
+//   typeof new Date() +
+//   "<br>" +
+//   "function () {} is " +
+//   typeof function () {} +
+//   "<br>" +
+//   "myCar is " +
+//   typeof myCar +
+//   "<br>" +
+//   "null is " +
+//   typeof null;
+
+document.querySelector(
+  ".demo1"
+).innerHTML = `5 different data types that can contain values: <br> 1.string 2.number 3.boolean 4.object 5.function `;
+
+document.querySelector(
+  ".demo2"
+).innerHTML = `6 types of objects: <br> 1.Object 2.Date 3.Array 4.String 5.Number 6.Boolean`;
+
+document.querySelector(
+  ".demo3"
+).innerHTML = ` 2 data types that cannot contain values: <br> 1.null 2.undefined`;
+
+document.querySelector(
+  ".demo4"
+).innerHTML = `The data type of: <br> 1.NaN is number 2.Array is object 3.Date is object 4.null is object 5.undefined is undefined `;
+
+// document.querySelector(".demo1").innerHTML =
+//   "John".constructor +
+//   "<br>" +
+//   (3.14).constructor +
+//   "<br>" +
+//   false.constructor +
+//   "<br>" +
+//   [1, 2, 3, 4].constructor +
+//   "<br>" +
+//   { name: "John", age: 24 }.constructor +
+//   "<br>" +
+//   new Date().constructor +
+//   "<br>" +
+//   function () {}.constructor;
+
+// const fruits = ["Banana", "Orange", "Apple"];
+// document.querySelector(".demo1").innerHTML = isArray(fruits);
+
+// function isArray(myArray) {
+//   return myArray.constructor.toString().indexOf("Array") > -1;
+// }
+
+// const fruits = ["Banana", "Orange", "Apple"];
+// document.querySelector(".demo1").innerHTML = isArray(fruits);
+// function isArray(myArray) {
+//   return myArray.constructor === Array;
+// }
+
+// const myDate = new Date();
+// document.querySelector(".demo1").innerHTML = isDate(myDate);
+
+// function isDate(myDate) {
+//   return myDate.constructor.toString().indexOf("Date") > -1;
+// }
+
+// let person = { firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue" };
+// person = null;
+// person = undefined;
+// document.querySelector(".demo1").innerHTML = typeof person;
+
+// const cars = ["Saab", "Volvo", "BMW"];
+// document.querySelector(".demo1").innerHTML =
+//   (cars instanceof Array) +
+//   "<br>" +
+//   (cars instanceof Object) +
+//   "<br>" +
+//   (cars instanceof String) +
+//   "<br>" +
+//   (cars instanceof Number);
+
+// let x = "50";
+// document.querySelector(".demo1").innerHTML = parseInt(x);
+// console.log(typeof parseInt(x));
+
+// const person = {
+//   name: "Sakib",
+//   info: function () {
+//     console.log(`${this.name} is 38 years old`);
+//   },
+// };
+// person.info();
+
+// console.log(!false);
+// let x = 50;
+// console.log(typeof function () {});
+
+// document.querySelector(".demo1").innerHTML =
+//   Number(3.14) +
+//   "<br>" +
+//   Number(Math.PI) +
+//   "<br>" +
+//   Number("   ") +
+//   "<br>" +
+//   Number("") +
+//   "<br>" +
+//   Number("99 88") +
+//   "<br>" +
+//   Number("John") +
+//   "<br>";
+
+// let y = "5";
+// let x = +y;
+// document.querySelector(".demo1").innerHTML = typeof y + "<br>" + typeof x;
+
+// let y = "John";
+// let x = +y;
+// document.querySelector(".demo1").innerHTML = typeof y + "<br>" + typeof x;
+
+// let x = 123;
+// document.querySelector(".demo1").innerHTML =
+
+//   String(x) + "<br>" + String(123) + "<br>" + String(100 + 23);
+
+// console.log(String(x) + "<br>" + String(123) + "<br>" + String(100 + 23));
+// let d = new Date();
+// console.log(typeof d);
+// c = Number(d);
+// document.querySelector(".demo1").innerHTML = typeof c;
+// console.log(typeof c);
+
+// const e = new Date();
+// let f = e.getTime();
+// console.log(f);
+// g = Number(f);
+// console.log(g);
+
+// let d = new Date();
+// console.log(typeof d);
+// Number(d);
+// console.log(typeof d);
+
+// document.querySelector(".demo1").innerHTML = String(Date());
+// console.log(typeof String(Date()));
+
+// console.log(Date().toString());
+
+// console.log(Number(false));
+// console.log(Number(true));
+// console.log(String(false));
+// console.log(String(true));
+
+// let a = 5 + null;
+// let b = "5" + null;
+// let c = "5" + 2;
+// let d = "5" - 2;
+// let e = "5" * "2";
+// // console.log(
+// //   "Converted: " + a + "<br>" + b + "<br>" + c + "<br>" + d + "<br>" + e + "<br>"
+// // );
+// console.log("Converted: ", a);
+// console.log("Converted: ", b);
+// console.log("Converted: ", c);
+// console.log("Converted: ", d);
+// console.log("Converted: ", e);
+// // console.log("Converted: ", a);
+
+// document.querySelector(".demo1").innerHTML = 5 & 1;
+
+// console.log(10 & 11);
+
+// let x = 5 ^ 1;
+// console.log(x);
+
+// let y = ~5;
+// console.log("Bitwise not: ", y);
+
+// let z = 5 << 1;
+// console.log("Left Shift:", z);
+
+// let a = -5 >> 1;
+// console.log("Right Shift: ", a);
+
+// let b = 5 >>> 1;
+// console.log("Zoro Fill: ", b);
+
+// console.log(b.toString(2));
+
+// let c = 10;
+// console.log(c.toString(2));
+// let d = 1010;
+// console.log((0b1100).toString(10));
+
+// console.log((0b10000).toString(10));
+
+// document.querySelector(".demo1").innerHTML = dec2bin(-5);
+// function dec2bin(dec) {
+//   return (dec >>> 0).toString(2);
+// }
+
+// document.querySelector(".demo1").innerHTML = bin2dec(101);
+// function bin2dec(bin) {
+//   return parseInt(bin, 2).toString(10);
+// }
+
+// let text = "Visit W3schools!";
+// let n = text.search("W3schools");
+// document.querySelector(".demo1").innerHTML = n;
+// let m = text.search("Visit");
+// document.querySelector(".demo1").innerHTML = m;
+
+// let text = "Visit W3Schools W3schools";
+// let n = text.search(/W3schools/i);
+// document.querySelector(".demo1").innerHTML = n;
+
+// let text = "Visit Microsoft!";
+// let result = text.replace("Microsoft", "W3Schools");
+// document.querySelector(".demo1").innerHTML = result;
+
+// let result2 = text.replace(/microsoft/i, "W3School");
+// console.log(result2);
+
+// let text = "Hello World! How are you? About You.";
+// let result = text.match(/you/gi);
+// document.querySelector(".demo1").innerHTML = result;
+
+// let text = "Hello World!\n How are you?\n About You.";
+// let result = text.match(/^you/gm);
+// document.querySelector(".demo1").innerHTML = "Result is: " + result;
+// console.log(result);
+
+// let text = "Is this all there is?";
+// let result = text.match(/[h]/g);
+// document.querySelector(".demo1").innerHTML = result;
+
+// let text = "Is this 1 all there 123 is?";
+// let result = text.match(/[h i s]/g);
+// document.querySelector(".demo1").innerHTML = result;
+// let result = text.match(/[0-6]/);
+// document.querySelector(".demo1").innerHTML = result;
+
+// let text = "123456789";
+// let result = text.match(/[1-4]/g);
+// document.querySelector(".demo1").innerHTML = result;
+
+// let text = "123456789";
+// let result = text.match(/[0-5]/g);
+// document.querySelector(".demo1").innerHTML = result;
+
+// let text = "re, Green, green, red, Red, green, gren, gr, blue, yellow";
+// let result = text.match(/(red|green)/gi);
+// document.querySelector(".demo1").innerHTML = result;
+
+// let text =
+//   "re, Green, green, red, Red, green, gren, gr, blue, Red, Green,yellow";
+// let result = text.match(/(red|green)/gi);
+// document.querySelector(".demo1").innerHTML = result;
+
+// let text = "Give 100%";
+// let result = text.match(/\d/g);
+// document.querySelector(".demo1").innerHTML = result;
+
+// let text = "Hello World! 123456779 uehdj";
+// let result = text.match(/\d/g);
+// document.querySelector(".demo1").innerHTML = result;
+// let result2 = text.match(/\s/g);
+// document.querySelector(".demo2").innerHTML = result2;
+
+// let text = "HELLO, LOOK AT YOU lo hola";
+// let result = text.search(/\bLO/);
+// document.querySelector(".demo2").innerHTML = result;
+
+// let text = "HELLO, LOOK AT YOU";
+// let result = text.search(/LO\b/);
+// document.querySelector(".demo1").innerHTML = result;
+
+// let text = "Visit W3Schools. Hello World!";
+// let result = text.match(/\u0057/g);
+// document.querySelector(".demo1").innerHTML = result;
+
+// let text = "Hellooo World! Hello W3Schools!";
+// let result = text.match(/o+/g);
+// document.querySelector(".demo1").innerHTML = result;
+// let result2 = text.match(/lo+/g);
+// document.querySelector(".demo2").innerHTML = result2;
+
+// let text = "Hellooo World! Hello W3Schools!";
+// let result = text.match(/lo*/g);
+// document.querySelector(".demo1").innerHTML = result;
+// let result2 = text.match(/Hel*/g);
+// document.querySelector(".demo2").innerHTML = result2;
+
+// let text = "1, 100 or 1000?";
+// let result = text.match(/100?/g);
+// document.querySelector(".demo1").innerHTML = result;
+
+// let text = document.querySelector('p')
+
+// let text = "The best things in life are free!";
+// const pattern = /e/g;
+// document.querySelector(".demo1").innerHTML = pattern.test(text);
+
+console.log(/e/.text("The best things in life are free"));
