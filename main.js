@@ -4738,4 +4738,250 @@ document.querySelector(
 // const pattern = /e/g;
 // document.querySelector(".demo1").innerHTML = pattern.test(text);
 
-console.log(/e/.text("The best things in life are free"));
+// console.log(/e/.text("The best things in life are free"));
+
+// let text = `My favorite color is gray. HEX colorrrrr code is ----> #80808080. I believe you are not "Color blind"! If you are not color blind then tell me what is your favourite colourr?
+// or you like multiple colors?
+// Can we make the 'r' silent? I like color! REGULAR EXPRESSION make makes me forget all spellings he he!`;
+
+// const text = "+88-01384948374";
+// const regex = /(\+88)?-?01[0-9]\d{8}/g;
+
+// const matches = text.match(regex);
+
+// const index = text.search(regex);
+
+// const replaced = text.replace(regex, "Phone Number");
+
+// const testing = regex.test(text);
+// console.log(matches, index, replaced, testing);
+
+// try {
+//   addlert("Welcome gest!");
+// } catch (err) {
+//   document.querySelector(".demo1").innerHTML = err.message;
+//   console.log(err.message);
+// }
+
+// function myFunction4() {
+//   const message = document.querySelector(".demo7");
+//   message.innerHTML = " ";
+//   let x = document.querySelector(".inp_1").value;
+//   try {
+//     if (x.trim() == "") throw "Empty";
+//     if (isNaN(x)) throw "not a number";
+//     x = Number(x);
+//     if (x < 5) throw "too low";
+//     if (x > 10) throw "too high";
+//   } catch (err) {
+//     message.innerHTML = "Input is " + err;
+//   }
+// }
+
+// function myFunction4() {
+//   const message = document.querySelector(".demo7");
+//   message.innerHTML = "";
+//   let x = document.querySelector(".inp_1").value;
+//   try {
+//     if (x.trim() == "") throw "Empty";
+//     if (isNaN(x)) throw "Not a number";
+//     x = Number(x);
+//     if (x < 5) throw "too low";
+//     if (x > 10) throw "too high";
+//   } catch (err) {
+//     message.innerHTML = "Input is " + err;
+//   }
+// }
+
+// function myFunction4() {
+//   const message = document.querySelector(".demo7");
+//   message.innerHTML = " ";
+//   let x = document.querySelector(".inp_1").value;
+//   try {
+//     if (x.trim() == "") throw "is empty";
+//     if (isNaN(x)) throw "is not a number";
+//     x = Number(x);
+//     if (x > 10) throw "is to high";
+//     if (x < 5) throw "is too low";
+//   } catch (err) {
+//     message.innerHTML = "Input " + err;
+//   } finally {
+//     document.querySelector(".demo7").value = " ";
+//   }
+// }
+
+// function myFunction4() {
+//   const message = document.querySelector(".demo7");
+//   message.innerHTML = " ";
+//   let x = document.querySelector("inp_1").value;
+//   try {
+//     if (x.trim() == "") throw "is empty";
+//     if (isNaN(x)) throw "is not a number";
+//     x = Number(x);
+//     if (x > 10) throw "is too high";
+//     if (x < 5) throw "is too low";
+//   } catch (err) {
+//     message.innerHTML = "Input " + err;
+//   } finally {
+//     document.querySelector(".demo7").value = " ";
+//   }
+// }
+
+// try {
+//   decodeURI("%%%");
+// } catch (err) {
+//   console.log(err.name);
+//   document.querySelector(".demo1").innerHTML = err.name;
+// }
+
+// let num = 23;
+// try {
+//   num.toUpperCase();
+// } catch (err) {
+//   document.querySelector(".demo1").innerHTML = err.name;
+// }
+
+// try {
+//   eval("alert (Hello)");
+// } catch (err) {
+//   document.querySelector(".demo1").innerHTML = err.name;
+// }
+
+// let x = 5;
+// try {
+//   x = y + 1;
+// } catch (err) {
+//   document.querySelector(".demo1").innerHTML = err.name;
+// }
+
+// let num = 1;
+// try {
+//   num.toPrecision(500);
+// } catch (err) {
+//   document.querySelector(".demo1").innerHTML = err.name;
+// }
+
+// function A(value) {
+//   firstName: "Hazrat Ali";
+//   lastName: "Mr.Ali";
+// }
+// document.querySelector(".demo1").innerHTML = firstName;
+// console.log(firstName);
+
+// let str = "Hello";
+// if (0 > 5) {
+//   str = "Peter";
+// }
+// console.log(str);
+
+// let test = 1;
+// test == 2;
+// console.log(test);
+
+// function myFunction1() {
+//   var carName = "BMW";
+//   console.log("carName:-", carName);
+// }
+// myFunction1();
+// console.log("carName:- ", carName);
+
+// function myFunction2() {
+//   let carName1 = "Volvo";
+//   console.log("carName1:-", carName1);
+// }
+// myFunction2();
+// console.log("CarName1:- ", carName1);
+
+// function myFunction3() {
+//   const carName2 = "Toyota";
+//   console.log("CarName2:-", carName2);
+// }
+// myFunction3();
+// console.log("carName2:- ", carName2);
+
+// let carName = "Volvo";
+// myFunction1();
+
+// function myFunction1() {
+//   document.querySelector(".demo1").innerHTML = "I can Display " + carName;
+// }
+
+// let carName = "BMW";
+// myFunction();
+// function myFunction() {
+//   document.querySelector(".demo1").innerHTML = "I can Display " + carName;
+//   console.log(carName);
+// }
+
+// myFunction();
+// document.querySelector(".demo1").innerHTML = "I can display " + carName;
+
+// function myFunction() {
+//   carName = "Volvo";
+// }
+
+// var carName = "Volvo";
+
+// document.querySelector(".demo1").innerHTML = "I can Display " + window.carName;
+// {
+//   console.log(typeof name);
+//   let name = "Hazrat";
+// }
+
+// console.log(str);
+// var str = "Hello Peter";
+
+// let babyAge = 1;
+// let isBirthday = true;
+
+// if (isBirthday) {
+//   let babyAge = 2;
+// }
+// console.log(babyAge);
+
+// x = 5;
+// elem = document.querySelector(".demo1");
+// elem.innerHTML = x;
+
+// var x;
+
+// var x;
+// x = 5;
+// elem = document.querySelector(".demo1");
+// elem = innerHeight = x;
+
+// try {
+//   carName = "Saab";
+//   let carName = "Volvo";
+// } catch (err) {
+//   document.querySelector(".demo1").innerHTML = err;
+//   console.log(err);
+// }
+
+// try {
+//   carName = "Volvo";
+//   // const carName;
+//   document.querySelector(".demo1").innerHTML = carName;
+// } catch (err) {
+//   console.log(err);
+// }
+
+// var x = 5;
+// var y = 7;
+
+// elem = document.querySelector(".demo1");
+// elem = innerHeight = x + " " + y;
+
+// var x = 5;
+// elem = document.querySelector(".demo1");
+// elem.innerHTML = "x is " + x + " and y is " + y;
+
+// var y = 7;
+
+var x = 5;
+var y;
+
+elem = document.querySelector(".demo1");
+elem.innerHTML = x + " " + y;
+
+y = 7;
