@@ -4978,10 +4978,361 @@ document.querySelector(
 
 // var y = 7;
 
-var x = 5;
-var y;
+// var x = 5;
+// var y;
 
-elem = document.querySelector(".demo1");
-elem.innerHTML = x + " " + y;
+// elem = document.querySelector(".demo1");
+// elem.innerHTML = x + " " + y;
 
-y = 7;
+// y = 7;
+
+// ("use strict");
+// myFunction();
+
+// function myFunction() {
+//   y = 3.1416;
+// }
+
+// let public = 1500;
+
+// const person = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   id: 45455443,
+//   fulName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+
+// document.querySelector(".demo1").innerHTML = person.fulName();
+
+// let x = this;
+// console.log(x);
+
+// document.querySelector(".demo1").innerHTML = myFunction();
+
+// function myFunction() {
+//   return this;
+// }
+
+// ("use strict");
+// document.querySelector(".demo1").innerHTML = myFunction1();
+
+// function myFunction1() {
+//   return this;
+// }
+
+// const person1 = {
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+// const person2 = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   id: 3437648,
+// };
+// let x = person1.fullName.call(person2);
+// document.querySelector(".demo1").innerHTML = x;
+
+// const person1 = {
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+
+// const person2 = {
+//   firstName: "John",
+//   lastName: "Doe",
+// };
+
+// let x = person1.fullName.call(person2);
+// document.querySelector(".demo1").innerHTML = x;
+
+// const person = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+
+// const member = {
+//   firstName: "Hege",
+//   lastName: "Nilsen",
+// };
+
+// let fullName = person.fullName.bind(member);
+
+// document.querySelector(".demo1").innerHTML = fullName();
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+// const member = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+// };
+
+// let fullName = person.fullName.bind(member);
+
+// let result = fullName;
+
+// document.querySelector(".demo1").innerHTML = result;
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+
+// const member = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+// };
+
+// let fullName = person.fullName.bind(member);
+
+// // Call the bound function to get the result
+// let result = fullName();
+
+// document.querySelector(".demo1").innerHTML = result;
+
+// let myFunction = (a, b) => a * b;
+// document.querySelector(".demo1").innerHTML = myFunction(4, 5);
+
+// let myFunction = (a, b) => a * b;
+// document.querySelector(".demo1").innerHTML = myFunction(4, 5);
+
+// const myFunction1 = (c, d) => d + c;
+// document.querySelector(".demo1").innerHTML = myFunction1(10, 5);
+
+// let hello = " ";
+
+// hello = function () {
+//   return "Hello World!";
+// };
+// document.querySelector(".demo1").innerHTML = hello();
+
+// let hello = "";
+
+// hello = () => {
+//   return "Hello World!";
+// };
+// document.querySelector(".demo1").innerHTML = hello();
+
+// hello = "";
+
+// hello = () => {
+//   return "Hello word!";
+// };
+// hello = () => "Hello World";
+// document.querySelector(".demo1").innerHTML = hello();
+
+// hello = "";
+
+// hello = () => "Hello Wrold!";
+// document.querySelector(".demo1").innerHTML = hello();
+
+// let hello = "";
+// hello = (val) => "Hello!" + val;
+// document.querySelector(".demo1").innerHTML = hello(" Universe!");
+
+// let hello = "";
+// hello = (val) => "Hello " + val;
+// document.querySelector(".demo1").innerHTML = hello("Universe!");
+
+// let myFunction1 = "";
+// myFunction1 = function () {
+//   document.querySelector(".demo1").innerHTML += this;
+// };
+
+// window.addEventListener("load", myFunction1);
+
+// document.querySelector(".btn-1").addEventListener("Click", myFunction1);
+
+// let hello = "";
+
+// hello = function () {
+//   document.querySelector(".demo1").innerHTML += this;
+// };
+
+// //The window object calls the function:
+// window.addEventListener("load", hello);
+
+// //A button object calls the function:
+// document.querySelector(".btn-1").addEventListener("click", hello);
+
+// let hello = " ";
+
+// hello = function () {
+//   document.querySelector(".demo1").innerHTML += this;
+// };
+// window.addEventListener("load", hello);
+
+// document.querySelector(".btn-1").addEventListener("click", hello);
+
+// let hello = "";
+// hello = () => {
+//   document.querySelector(".demo1").innerHTML += this;
+// };
+// window.addEventListener("load", hello);
+// document.querySelector(".btn-1").addEventListener("click", hello);
+
+// let hello = "";
+// hello = () => {
+//   document.querySelector(".demo1").innerHTML += this;
+// };
+// window.addEventListener("load", hello);
+// document.querySelector(".btn-1").addEventListener("click", hello);
+
+// let add = (a, b) => a + b;
+// document.querySelector(".demo1").innerHTML = add(3, 5);
+
+// let square = x => x * x;
+// document.querySelector('.demo1').innerHTML = square(5)
+
+// let greet = () => console.log("Hello! World");
+// greet();
+
+// let greet = () => console.log("Hello World");
+// greet();
+
+let multiple = (a, b) => {
+  let result = a * b;
+  return result;
+};
+console.log(multiple(3, 4));
+
+// let createPerson = (name, age) => ({
+//   name: name,
+//   age: age,
+// });
+// let person = createPerson("Hazrat", 23);
+// console.log(person);
+
+// function Counter() {
+//   this.count = 0;
+//   setInterval(() => {
+//     this.count++;
+//     console.log(this.count);
+//   }, 100);
+// }
+// let counter = new Counter();
+// console.log(counter);
+
+let numbers = [1, 2, 3, 4, 5, 6];
+let squaredNumbers = numbers.map((x) => x * x);
+console.log(squaredNumbers);
+
+let power = (base, exponent = 2) => Math.pow(base, exponent);
+console.log(power(3));
+console.log(power(2, 3));
+
+// class person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   play(status) {
+//     console.log(`${this.name} is playing ${status}`);
+//   }
+// }
+
+// const person1 = new person("Sakib", 35);
+// const person2 = new person("Tamim", 36);
+
+// person1.play("bad");
+// person2.play("well");
+
+// class person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   play() {
+//     console.log(`${this.name} is playing`);
+//   }
+// }
+// const person1 = new person("Sakib", 38);
+// const person2 = new person("Tamim", 36);
+
+// person1.play();
+// person2.play();
+
+// class Car {
+//   constructor(name, year) {
+//     this.name = name;
+//     this.year = year;
+//   }
+// }
+// const myCar1 = new Car("Ford", 2014);
+// const myCar2 = new Car("Audi", 2019);
+
+// document.querySelector(".demo1").innerHTML = myCar1.name + " " + myCar2.name;
+
+// class Car {
+//   constructor(name, year) {
+//     this.name = name;
+//     this.year = year;
+//   }
+//   age() {
+//     const date = new Date();
+//     return date.getFullYear() - this.year;
+//   }
+// }
+
+// const myCar = new Car("Ford", 2014);
+// document.querySelector(".demo1").innerHTML =
+//   "My car is " + myCar.age() + " years old.";
+
+// const date = new Date();
+// const today = date.getFullYear();
+// console.log(today);
+
+// class Car {
+//   constructor(name, year) {
+//     this.name = name;
+//     this.year = year;
+//   }
+//   age(x) {
+//     return x - this.year;
+//   }
+// }
+// const date = new Date();
+// let year = date.getFullYear();
+
+// const myCar = new Car("Ford", 2014);
+// document.querySelector(".demo1").innerHTML =
+//   "My car is " + myCar.age(year) + "years old.";
+
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  makeSound() {
+    console.log("Generic animal sound");
+  }
+}
+
+let myAnimal = new Animal("Fluffy");
+console.log(myAnimal.name);
+myAnimal.makeSound();
+
+class Calculator {
+  add(a, b) {
+    return a + b;
+  }
+  subtract(a, b) {
+    return a - b;
+  }
+}
+let myCalculator = new Calculator();
+console.log(myCalculator.add(5, 3));
+console.log(myCalculator.subtract(7, 2));
