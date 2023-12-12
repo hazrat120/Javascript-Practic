@@ -5204,11 +5204,11 @@ document.querySelector(
 // let greet = () => console.log("Hello World");
 // greet();
 
-let multiple = (a, b) => {
-  let result = a * b;
-  return result;
-};
-console.log(multiple(3, 4));
+// let multiple = (a, b) => {
+//   let result = a * b;
+//   return result;
+// };
+// console.log(multiple(3, 4));
 
 // let createPerson = (name, age) => ({
 //   name: name,
@@ -5227,13 +5227,13 @@ console.log(multiple(3, 4));
 // let counter = new Counter();
 // console.log(counter);
 
-let numbers = [1, 2, 3, 4, 5, 6];
-let squaredNumbers = numbers.map((x) => x * x);
-console.log(squaredNumbers);
+// let numbers = [1, 2, 3, 4, 5, 6];
+// let squaredNumbers = numbers.map((x) => x * x);
+// console.log(squaredNumbers);
 
-let power = (base, exponent = 2) => Math.pow(base, exponent);
-console.log(power(3));
-console.log(power(2, 3));
+// let power = (base, exponent = 2) => Math.pow(base, exponent);
+// console.log(power(3));
+// console.log(power(2, 3));
 
 // class person {
 //   constructor(name, age) {
@@ -5312,27 +5312,151 @@ console.log(power(2, 3));
 // document.querySelector(".demo1").innerHTML =
 //   "My car is " + myCar.age(year) + "years old.";
 
-class Animal {
-  constructor(name) {
-    this.name = name;
-  }
-  makeSound() {
-    console.log("Generic animal sound");
-  }
-}
+// class Animal {
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   makeSound() {
+//     console.log("Generic animal sound");
+//   }
+// }
 
-let myAnimal = new Animal("Fluffy");
-console.log(myAnimal.name);
-myAnimal.makeSound();
+// let myAnimal = new Animal("Fluffy");
+// console.log(myAnimal.name);
+// myAnimal.makeSound();
 
-class Calculator {
-  add(a, b) {
-    return a + b;
-  }
-  subtract(a, b) {
-    return a - b;
-  }
-}
-let myCalculator = new Calculator();
-console.log(myCalculator.add(5, 3));
-console.log(myCalculator.subtract(7, 2));
+// class Calculator {
+//   add(a, b) {
+//     return a + b;
+//   }
+//   subtract(a, b) {
+//     return a - b;
+//   }
+// }
+// let myCalculator = new Calculator();
+// console.log(myCalculator.add(5, 3));
+// console.log(myCalculator.subtract(7, 2));
+
+// class Person {
+//   constructor(name = "Hazrat Ali", age = 23) {
+//     this.name = name;
+//     this.age = age;
+//   }
+// }
+// let hazrat = new Person();
+// console.log(hazrat.name);
+// console.log(hazrat.age);
+
+// let rakib = new Person("Rakib", 25);
+// console.log(rakib.name);
+// console.log(rakib.age);
+
+// class Circle {
+//   constructor(radius) {
+//     this._radius = radius;
+//   }
+//   get radius() {
+//     return this._radius;
+//   }
+
+//   set radius(value) {
+//     if (value > 0) {
+//       this._radius = value;
+//     } else {
+//       console.error("Radius must be greater than 0");
+//     }
+//   }
+// }
+// let myCircle = new Circle(5);
+// console.log(myCircle.radius);
+// myCircle.radius = 8;
+// console.log(myCircle.radius);
+
+// import messege from "./message.js";
+
+// export { name, age, H, A };
+// console.log(H);
+
+// let text =
+//   '{"employees":[' +
+//   '{"firstName":"John","lastName":"Doe" },' +
+//   '{"firstName":"Anna","lastName":"Smith" },' +
+//   '{"firstName":"Peter","lastName":"Jones" }]}';
+
+// const obj = JSON.parse(text);
+
+// document.querySelector(".demo1").innerHTML =
+//   obj.employees[1].firstName + " " + obj.employees[1].lastName;
+
+// console.log(obj.employees[2].firstName + " " + obj.employees[2].lastName);
+
+// let person = {
+//   name: "Hazrat Ali",
+//   age: 23,
+//   city: "Example city",
+// };
+
+// const obj = JSON.parse(person);
+// document.querySelector(".demo1").innerHTML = obj.person[0].name;
+
+// let books = [
+//   { title: "Book 1", author: "Author 1" },
+//   { title: "Book 2", author: "Author 2" },
+//   { title: "Book 3", author: "Author 3" },
+// ];
+
+// const obj = JSON.stringify(books);
+// console.log(obj);
+
+// let json = [
+//   { title: "Book 1", author: "Author 1" },
+//   { title: "Book 2", author: "Author 2" },
+//   { title: "Book 3", author: "Author 3" },
+// ];
+
+// const obj2 = JSON.parse(json);
+// console.log(obj2.json[0].title);
+
+// {
+//   ('[{"title":"Book 1","author":"Author 1"},{"title":"Book 2","author":"Author 2"},{"title":"Book 3","author":"Author 3"}]');
+// }
+
+// let text =
+//   '{"employees":[' +
+//   '{"firstName": "Hazrat", "lastName": "Ali"},' +
+//   '{"firstName": "Mizan", "lastName": "Ahad"},' +
+//   '{"firstName": "Peter", "lastName":"Jone"}]}';
+
+// const obj = JSON.parse(text);
+// console.log(obj.employees[1].lastName);
+// console.log("lastName: ",obj.employees[2].lastName);
+
+// var person = {
+//   name: "Hazrat ali",
+//   age: 23,
+//   city: "Dhaka",
+// };
+// let str = JSON.stringify(person);
+// console.log(str);
+
+// const obj = JSON.parse(str);
+// console.log(obj.person[0].name);
+
+// let a, b, c;
+// a = 5;
+// b = 10;
+// c = a * b;
+// console.log(c);
+
+// function myFunction(a) {
+//   let b = 10;
+//   b += a;
+// }
+// console.log(myFunction(3));
+
+// function myFunction(a) {
+//   let power = 10;
+//   return;
+//   a * power;
+// }
+// console.log(myFunction(10));
