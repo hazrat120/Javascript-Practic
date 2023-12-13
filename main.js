@@ -5766,23 +5766,318 @@ document.querySelector(
 // let p2 = "car1";
 // console.log(myObj[p1][p2]);
 
-let x = "";
-const myObj = {
-  name: "Hazrat Ali",
-  age: 30,
-  cars: [
-    { name: "Ford", models: ["Fiesta", "Focus", "Mustan"] },
-    { name: "BMW", models: ["230", "X3", "X5"] },
-    { name: "Fiat", models: ["500", "Panda"] },
-  ],
-};
+// let x = "";
+// const myObj = {
+//   name: "Hazrat Ali",
+//   age: 30,
+//   cars: [
+//     { name: "Ford", models: ["Fiesta", "Focus", "Mustan"] },
+//     { name: "BMW", models: ["230", "X3", "X5"] },
+//     { name: "Fiat", models: ["500", "Panda"] },
+//   ],
+// };
 
-for (let i in myObj.cars) {
-  x += "<h2>" + myObj.cars[i].name + "</h2>";
-  for (let j in myObj.cars[i].models) {
-    x += myObj.cars[i].models[j] + "<br>";
-  }
+// for (let i in myObj.cars) {
+//   x += "<h2>" + myObj.cars[i].name + "</h2>";
+//   for (let j in myObj.cars[i].models) {
+//     x += myObj.cars[i].models[j] + "<br>";
+//   }
+// }
+
+// document.querySelector(".demo1").innerHTML = x;
+// console.log(x);
+
+// const person = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   id: 5566,
+// };
+// person.name = function () {
+//   return (this.firstName + " " + this.lastName).toUpperCase();
+// };
+
+// document.querySelector(".demo1").innerHTML = "My name is " + person.name();
+
+// const person = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   id: 3445,
+//   name: function () {
+//     return (this.firstName + " " + this.lastName).toUpperCase();
+//   },
+// };
+
+// document.querySelector(".demo1").innerHTML = "My name is " + person.name();
+
+// const person = {
+//   name: "John",
+//   age: 30,
+//   city: "New York",
+// };
+
+// let text = "";
+// for (let x in person) {
+//   text += person[x] + " ";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const person = {
+//   name: "John",
+//   age: 30,
+//   city: "New York",
+// };
+
+// document.querySelector(".demo1").innerHTML = Object.values(person);
+
+// const person = {
+//   name: "John",
+//   age: 30,
+//   city: "New York",
+// };
+
+// document.querySelector(".demo1").innerHTML = Object.values(person);
+
+// const person = {
+//   name: "John",
+//   age: 30,
+//   city: "New York",
+// };
+
+// let myString = JSON.stringify(person);
+// console.log(myString);
+
+// let JString = JSON.parse(myString);
+// console.log("JString: ", JString);
+
+// const person = {
+//   name: "John",
+//   age: function () {
+//     return 30;
+//   },
+// };
+// let ages = person.age.toString();
+
+// document.querySelector(".demo1").innerHTML = JSON.stringify(person);
+
+// const person = {
+//   name: "John",
+//   age: function () {
+//     return 30;
+//   },
+// };
+// person.age = person.age.toString();
+
+// document.querySelector(".demo1").innerHTML = JSON.stringify(person);
+
+// const person = {
+//   name: "John",
+//   age: function () {
+//     return 30;
+//   },
+// };
+
+// person.age = person.age.toString();
+
+// document.querySelector(".demo1").innerHTML = JSON.stringify(person);
+
+// const arr = ["Hazrat", "Ali", "Mizan", "Farzana"];
+// document.querySelector(".demo1").innerHTML = JSON.stringify(arr);
+
+// let message = "Hello peter";
+// console.log(message.toUpperCase());
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   language: "English",
+//   get lang() {
+//     return this.language;
+//   },
+// };
+
+// document.querySelector(".demo1").innerHTML = person.lang;
+
+// const person = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   age: 23,
+//   eyeColor: "Blue",
+//   language: "Bangla",
+//   get lang() {
+//     return this.language;
+//   },
+//   get fullName() {
+//     return (
+//       this.firstName + " " + this.lastName + " is " + this.age + " years old"
+//     );
+//   },
+// };
+// console.log(person.lang);
+// console.log(person.fullName);
+
+// const person = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   age: 23,
+//   language: "Bangla",
+//   get fullName() {
+//     return this.firstName + " " + this.lastName;
+//   },
+//   set lang(value) {
+//     this.language = value;
+//   },
+// };
+// person.lang = "English";
+// console.log(person.fullName);
+// console.log("Language: ", person.language);
+
+// const person = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   language: "No",
+//   set lang(value) {
+//     this.language = value;
+//   },
+// };
+// person.lang = "English";
+// console.log("Language: ", person.language);
+
+// const person = {
+//   lastName: "Ali",
+//   firstName: "Hazrat",
+//   age: 23,
+//   language: "Bangla",
+//   set lang(value) {
+//     this.language = value;
+//   },
+// };
+
+// person.lang = "English";
+// console.log("Language: ", person.language);
+// console.log(person);
+
+// const person = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   langGuage: "Bangla",
+//   get lang() {
+//     return this.langGuage.toUpperCase();
+//   },
+// };
+
+// console.log(person.lang);
+// console.log(person)
+
+// const person = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   language: "",
+//   set lang(lang) {
+//     this.language = lang.toUpperCase();
+//   },
+// };
+
+// person.lang = "Bangla";
+// console.log(person.language);
+// console.log(person);
+
+// const obj = { counter: 0 };
+
+// Object.defineProperty(obj, "reset", {
+//   get: function () {
+//     this.counter = 0;
+//   },
+// });
+// Object.defineProperty(obj, "increment", {
+//   get: function () {
+//     this.counter++;
+//   },
+// });
+// Object.defineProperty(obj, "decrement", {
+//   get: function () {
+//     this.counter--;
+//   },
+// });
+// Object.defineProperty(obj, "add", {
+//   set: function (value) {
+//     this.counter += value;
+//   },
+// });
+// Object.defineProperty(obj, "subtract", {
+//   set: function (value) {
+//     this.counter -= value;
+//   },
+// });
+
+// //play with counter:
+// obj.reset;
+// obj.add = 6;
+// obj.subtract = 2;
+// obj.increment;
+// obj.decrement;
+// document.querySelector(".demo1").innerHTML = obj.counter;
+
+// const firstName = new String("Hazrat");
+// console.log(firstName);
+
+// function Person(first, last, age) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+//   this.fullName = function () {
+//     return this.firstName + " " + this.lastName;
+//   };
+// }
+
+// const myName = new Person("Hazrat", "Ali", 23);
+// const mizan = new Person("Mizan", "Ahad", 24);
+// const rakib = new Person("Rakib", "islam", 25);
+
+// console.log(myName);
+// console.log(mizan);
+// console.log(rakib);
+
+// function Person(first, last, age) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+// }
+
+// const myName = new Person("Hazrat", "Ali", 23);
+// const mizan = new Person("Mizan", "Ahad", 23);
+// console.log(myName);
+// console.log(mizan);
+
+// function Person(first, last, age, eye) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+//   this.eyeCOlor = eye;
+//   this.country = "Bangladesh";
+//   this.fullName = function () {
+//     return this.firstName + " " + this.lastName;
+//   };
+// }
+
+// const myName = new Person("Hazrat", "Ali", 23, "Blue");
+// const friend = new Person("Mizan", "Ahad", 23, "Blue");
+// console.log(Person.myName.fullName());
+// console.log(Person.friend);
+
+function Person(first, last, age) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.fullName = function () {
+    return this.firstName + " " + this.lastName;
+  };
 }
 
-document.querySelector(".demo1").innerHTML = x;
-console.log(x);
+const hazrat = new Person("Hazrat", "Ali", 23);
+const mizan = new Person("Mizan", "Ahad", 22);
+const hosen = new Person("Hosen", "Howlader", 23);
+
+Person.country = "Bangladesh";
+
+console.log(hazrat.fullName());
+console.log(mizan.fullName());
