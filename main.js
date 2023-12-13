@@ -5460,3 +5460,329 @@ document.querySelector(
 //   a * power;
 // }
 // console.log(myFunction(10));
+
+// const sentence = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, culpa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, dolore? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, dignissimos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, dignissimos? Lorem ipsum dolor sit, amet consectetur adipisicing elit.`;
+
+// const matches = sentence.match(/lorem/gi);
+// // console.log(matches);
+// const occurances = matches ? matches.length : 0;
+
+// console.log(occurances);
+
+// let Position = sentence.search(/lorem/i);
+// Position = Position >= 0 ? Position : "Not found!";
+
+// console.log(Position);
+
+// function linearSearch(arr, val) {
+//   const lengths = arr.length;
+
+//   for (let i = 0; i < lengths; i++) {
+//     if (arr[i] === val) {
+//       return i;
+//     }
+//   }
+//   return "not found";
+// }
+
+// console.log(linearSearch(["a", "b", "c", "d", "c"], "c"));
+
+// function longestString(names) {
+//   let longestWord = "";
+
+//   for (name of names) {
+//     if (name.length > longestWord.length) {
+//       longestWord = name;
+//     }
+//   }
+//   return [longestWord, names.indexOf(longestWord)];
+// }
+// console.log(
+//   longestString([
+//     "Hazrat Ali",
+//     "Abid",
+//     "mizan",
+//     "Learn with Hazrat Ali",
+//     "Hosen",
+//   ])
+// );
+
+// function FizzBuzz(number) {
+//   for (let i = 0; i <= number; i++) {
+//     if (i % 15 === 0) {
+//       console.log(`${i} is FizzBuzz`);
+//     } else if (i % 3 === 0) {
+//       console.log(`${i} is Fizz`);
+//     } else if (i % 5 === 0) {
+//       console.log(`${i} is Buzz`);
+//     } else {
+//       console.log(i);
+//     }
+//   }
+// }
+// FizzBuzz(200);
+
+// const mixedArr = [
+//   "ls",
+//   undefined,
+//   "learn with Hazrat",
+//   false,
+//   "",
+//   "apple",
+//   40,
+//   "K",
+//   true,
+//   "thanks all",
+//   NaN,
+// ];
+
+// const trueArray = mixedArr.filter(function (el) {
+//   if (el) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// });
+// const trueArray = mixedArr.filter(Boolean);
+// console.log(trueArray);
+
+// const obj = {
+//   a: "ls",
+//   b: undefined,
+//   c: "learn with Hazrat",
+//   d: false,
+//   e: "",
+//   f: "apple",
+//   g: 40,
+//   g: "K",
+//   h: true,
+//   i: "thanks all",
+//   j: NaN,
+// };
+
+// const truehyObject = function (obj) {
+//   for (let i in obj) {
+//     if (!obj[i]) {
+//       delete obj[i];
+//     }
+//   }
+//   return obj;
+// };
+
+// console.log(truehyObject(obj));
+
+// const sentence = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, culpa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, dolore? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, dignissimos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, dignissimos? Lorem ipsum dolor sit, amet consectetur adipisicing elit.`;
+
+// const matches = sentence.match(/lorem/gi);
+// const occurances = matches ? matches.length : 0;
+
+// console.log(occurances);
+
+// let position = sentence.search(/lorem/ig);
+// position = position >= 0 ? position : "not found!" ;
+// console.log(position)
+
+// const sentence =
+//   "Lorem ipsum dolor sit amet consectetur, hazrat adipisicing elit.hazrat Modi, culpa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, dolore? Hazrat Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, hazrat dignissimos. Lorem ipsum dolor sit, amet consectetur adipisicing elit.Hazrat Ali Quaerat, dignissimos? Lorem ipsum dolor sit, amet consectetur adipisicing elit. hazrat";
+
+// const matches = sentence.match(/hazrat/gi);
+// // console.log("matches: ", matches);
+// const occurances = matches ? matches.length : 0;
+// console.log("Occurances: ", occurances);
+
+// let position = sentence.search(/hazrat/gi);
+// position = position >= 0 ? position : "not found";
+
+// console.log("Position: ", position);
+
+// function linearSearch(arr, val) {
+//   const lenghts = arr.length;
+//   for (let i = 0; i < lenghts; i++) {
+//     if (arr[i] === val) {
+//       return i;
+//     }
+//   }
+//   return "Not found";
+// }
+// console.log(" Match and index: ", linearSearch(["a", "b", "c", "d", "c"], "c"));
+
+// function longestString(names) {
+//   let longestWord = "";
+
+//   for (name of names) {
+//     if (name.length > longestWord.length) {
+//       longestWord = name;
+//     }
+//   }
+//   return [longestWord, names.indexOf(longestWord)];
+// }
+
+// console.log(
+//   longestString([
+//     "Hazrat Ali",
+//     "Learn with Hazrat Ali",
+//     "Hosen",
+//     "Mizan",
+//     "Ali",
+//   ])
+// );
+
+// function longestString(names) {
+//   let longestWord = "";
+//   for (name of names) {
+//     if (name.length > longestWord.length) {
+//       longestWord = name;
+//     }
+//   }
+//   return [longestWord, names.indexOf(longestWord)];
+// }
+
+// console.log(
+//   longestString([
+//     "Hazrat Ali",
+//     "Learn with Hazrat Ali",
+//     "Hosen",
+//     "Mizan",
+//     "Ali",
+//   ])
+// );
+
+// function fizzBuzz(number) {
+//   for (let i = 1; i <= number; i++) {
+//     if (i % 15 === 0) {
+//       console.log(`${i} is FizzBuzz.`);
+//     } else if (i % 3 === 0) {
+//       console.log(`${i} is Fizz.`);
+//     } else if (i % 5 === 0) {
+//       console.log(`${i} is Buzz.`);
+//     }
+//   }
+// }
+
+// fizzBuzz(200);
+
+// function fizzBuzz(number) {
+//   for (let i = 1; i <= number; i++) {
+//     if (i % 15 === 0) {
+//       console.log(`${i} is FizzBuzz.`);
+//     } else if (i % 3 === 0) {
+//       console.log(`${i} is Fizz.`);
+//     } else if (i % 5 === 0) {
+//       console.log(`${i} is Buzz.`);
+//     }
+//   }
+// }
+
+// fizzBuzz(200);
+
+// const obj = {
+//   a: "ls",
+//   b: undefined,
+//   c: "learn with Hazrat",
+//   d: false,
+//   e: "",
+//   f: "apple",
+//   g: 40,
+//   g: "K",
+//   h: true,
+//   i: "thanks all",
+//   j: NaN,
+// };
+
+// const truehyObject = function (obj) {
+//   for (let i in obj) {
+//     if (!obj[i]) {
+//       delete obj[i];
+//     }
+//   }
+//   return obj;
+// };
+
+// console.log(truehyObject(obj));
+
+// const mixedArr = [
+//   "ls",
+//   undefined,
+//   "learn with Hazrat",
+//   false,
+//   "",
+//   "apple",
+//   40,
+//   "K",
+//   true,
+//   "thanks all",
+//   NaN,
+// ];
+
+// const trueArray = mixedArr.filter(function (el) {
+//   if (el) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// });
+
+// console.log(trueArray);
+
+// const mixedArr = [
+//   "ls",
+//   undefined,
+//   "learn with Hazrat",
+//   false,
+//   "",
+//   "apple",
+//   40,
+//   "K",
+//   true,
+//   "thanks all",
+//   NaN,
+// ];
+
+// const trueArray = mixedArr.filter(Boolean);
+// console.log(trueArray);
+
+// const person = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   age: 50,
+//   eyeColor: "blue",
+// };
+// delete person['age'];
+// console.log(person);
+
+// const myObj = {
+//   name: "Hazrat",
+//   age: 23,
+//   cars: {
+//     car1: "Ford",
+//     car2: "BMW",
+//     car3: "Fiat",
+//   },
+// };
+// console.log(myObj.cars.car1);
+// console.log(myObj.cars["car1"]);
+// console.log(myObj["cars"]["car2"]);
+// let p1 = "cars";
+// let p2 = "car1";
+// console.log(myObj[p1][p2]);
+
+let x = "";
+const myObj = {
+  name: "Hazrat Ali",
+  age: 30,
+  cars: [
+    { name: "Ford", models: ["Fiesta", "Focus", "Mustan"] },
+    { name: "BMW", models: ["230", "X3", "X5"] },
+    { name: "Fiat", models: ["500", "Panda"] },
+  ],
+};
+
+for (let i in myObj.cars) {
+  x += "<h2>" + myObj.cars[i].name + "</h2>";
+  for (let j in myObj.cars[i].models) {
+    x += myObj.cars[i].models[j] + "<br>";
+  }
+}
+
+document.querySelector(".demo1").innerHTML = x;
+console.log(x);
