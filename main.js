@@ -6064,20 +6064,457 @@ document.querySelector(
 // console.log(Person.myName.fullName());
 // console.log(Person.friend);
 
-function Person(first, last, age) {
-  this.firstName = first;
-  this.lastName = last;
-  this.age = age;
-  this.fullName = function () {
+// function Person(first, last, age) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+//   this.fullName = function () {
+//     return this.firstName + " " + this.lastName;
+//   };
+// }
+
+// const hazrat = new Person("Hazrat", "Ali", 23);
+// const mizan = new Person("Mizan", "Ahad", 22);
+// const hosen = new Person("Hosen", "Howlader", 23);
+
+// Person.country = "Bangladesh";
+
+// console.log(hazrat.fullName());
+// console.log(mizan.fullName());
+
+// function iterator
+
+// const myNumbers = {};
+
+// //make it iterable
+// myNumbers[Symbol.iterator] = function () {
+//   let n = 0;
+//   let done = false;
+//   return {
+//     next() {
+//       n += 10;
+//       if (n == 200) {
+//         done = true;
+//       }
+//       return {
+//         value: n,
+//         done: done,
+//       };
+//     },
+//   };
+// };
+
+// for (let num of myNumbers) {
+//   console.log(num);
+// }
+
+// const letters = new Set(["a", "b", "c", "d", "e", "f", "a", "b"]);
+
+// document.querySelector(".demo1").innerHTML = letters.size;
+
+// letters.add("g");
+// letters.add("h");
+// letters.add("I");
+// letters.add("J");
+// console.log(letters.size);
+
+// const letters = new Set();
+
+// let a = "a";
+// let b = "b";
+// let c = "c";
+// let d = "d";
+// let e = "e";
+
+// letters.add(a);
+// letters.add(b);
+// letters.add(c);
+// letters.add(d);
+// letters.add(e);
+
+// console.log(letters.size);
+
+// let text = "";
+// letters.forEach(function (value) {
+//   text += value + "<br>";
+// });
+
+// document.querySelector(".demo1").innerHTML = text;
+// console.log(text);
+
+// const letters = new Set(["a", "b", "c", "d", "e", "f", "g"]);
+
+// let text = "";
+// for (const x of letters.values()) {
+//   text += x + "<br>";
+// }
+// document.querySelector(".demo2").innerHTML = text;
+// document.querySelector(".demo1").innerHTML = letters.values();
+
+// const letters = new Set(["a", "b", "c", "d", "e", "f", "a", "b"]);
+
+// let text = "";
+// for (const x of letters.values()) {
+//   text += x + "<br>";
+// }
+
+// document.querySelector(".demo1").innerHTML = text;
+
+// const letters = new Set(["a", "b", "c", "d", "e", "f"]);
+
+// const iterator = letters.entries();
+// let text = "";
+// for (const entry of iterator) {
+//   text += entry + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const fruits = new Map([
+//   ["Apples", 500],
+//   ["bananas", 300],
+//   ["Oranges", 200],
+//   ["Lemons", 600],
+// ]);
+// document.querySelector(".demo1").innerHTML = fruits.get("Apples");
+// console.log(fruits.get("bananas"));
+
+// const fruits = new Map();
+
+// fruits.set("Apples", 500);
+// fruits.set("bananas", 300);
+// fruits.set("oranges", 300);
+// console.log(fruits.get("oranges"));
+
+// const fruits = new Map([
+//   ["Apples", 500],
+//   ["bananas", 300],
+//   ["Oranges", 200],
+//   ["Lemons", 600],
+// ]);
+
+// fruits.set("Lemons", 100);
+// fruits.set("Apples", 500);
+// console.log(fruits.get("lemons"));
+// console.log(fruits.get("Apples"));
+// console.log(fruits.size);
+// console.log(fruits.has("Apple"));
+
+// const fruits = new Map([
+//   ["Apples", 500],
+//   ["bananas", 300],
+//   ["Oranges", 200],
+//   ["Lemons", 600],
+// ]);
+// let text = "";
+// fruits.forEach(function (value, key) {
+//   text += key + " = " + value + "<br>";
+// });
+// console.log(text);
+// document.querySelector(".demo1").innerHTML = text;
+
+// const fruits = new Map([
+//   ["Apples", 500],
+//   ["bananas", 300],
+//   ["Oranges", 200],
+//   ["Lemons", 600],
+// ]);
+
+// let text = "";
+// for (const x of fruits.entries()) {
+//   text += x + "<br>";
+// }
+
+// document.querySelector(".demo1").innerHTML = text;
+
+// const fruits = new Map([
+//   ["Apples", 500],
+//   ["bananas", 300],
+//   ["Oranges", 200],
+//   ["Lemons", 600],
+// ]);
+
+// let text = " ";
+// for (const x of fruits.entries()) {
+//   text += x;
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// const fruits = new Map([
+//   ["Apples", 500],
+//   ["bananas", 300],
+//   ["Oranges", 200],
+//   ["Lemons", 600],
+// ]);
+
+// let text = " ";
+// for (const x of fruits.keys()) {
+//   text += x + "<br>";
+// }
+// // for (const x of fruits.values()) {
+// //   text += x + "<br>";
+// // }
+
+// document.querySelector(".demo1").innerHTML = text;
+
+// const fruits = new Map([
+//   ["Apples", 500],
+//   ["bananas", 300],
+//   ["Oranges", 200],
+//   ["Lemons", 600],
+// ]);
+// let total = 0;
+// for (const x of fruits.values()) {
+//   total += x;
+// }
+
+// document.querySelector(".demo1").innerHTML = total;
+
+// const person = {
+//   firsName: "John",
+//   lastName: "Doe",
+//   language: "EN",
+// };
+
+// Object.defineProperty(person, "language", { value: "No" });
+// document.querySelector(".demo1").innerHTML = person.language;
+
+// const fruits = new Map([
+//   ["Apples", 500],
+//   ["bananas", 300],
+//   ["Oranges", 200],
+//   ["Lemons", 600],
+// ]);
+
+// Object.defineProperty(fruits, "Apples", { enumerable: false });
+
+// document.querySelector(".demo1").innerHTML = Object.getOwnPropertyNames(fruits);
+
+// const x = function (a, b) {
+//   return a * b;
+// };
+// document.querySelector(".demo1").innerHTML = x(4, 5);
+
+// const myFunction = new Function("a", "b", "return a * b");
+// document.querySelector(".demo1").innerHTML = "MyFunction: " + myFunction(4, 3);
+
+// const myFunction = new Function("a", "b", "return a * b");
+// console.log("MyFunction: " + myFunction(5, 6));
+// document.querySelector(".demo1").innerHTML = "myFunction: " + myFunction(6, 7);
+
+// (function () {
+//   document.querySelector(".demo1").innerHTML = "Hello! I called mySelf";
+// })();
+
+// (function () {
+//   document.querySelector(".demo1").innerHTML = "Hello! I called mySelf";
+// })();
+
+// (function () {
+//   document.querySelector(".demo2").innerHTML = "Hello Mr.Ali";
+// })();
+
+// function myFunction(a, b) {
+//   return a * b;
+// }
+// let x = myFunction(4, 6);
+// document.querySelector(".demo1").innerHTML = x;
+
+// function myFunction(a, b) {
+//   return a * b;
+// }
+// let x = myFunction(4, 3) * 8;
+// document.querySelector(".demo1").innerHTML = x;
+
+// const x = (x, y) => x * y;
+// document.querySelector(".demo1").innerHTML = x(5, 5);
+
+// const x = (x, y) => {
+//   return x * y;
+// };
+// document.querySelector(".demo1").innerHTML = x(4, 5);
+
+// function sum(...args) {
+//   let sum = 0;
+//   for (let arg of args) sum += args;
+//   return sum;
+// }
+
+// let x = sum(4, 9, 15, 34, 21);
+// document.querySelector(".demo1").innerHTML = x;
+
+// function findMax() {
+//   let max = -Infinity;
+//   for (let i = 0; i < arguments.length; i++) {
+//     if (arguments[i] > max) {
+//       max = arguments[i];
+//     }
+//   }
+//   return max;
+// }
+// document.querySelector(".demo1").innerHTML = findMax(10, 50, 6);
+
+// function findMax() {
+//   let max = -Infinity;
+//   for (let i = 0; i < arguments.length; i++) {
+//     if (arguments[i] > max) {
+//       max = arguments[i];
+//     }
+//   }
+//   return max;
+// }
+// document.querySelector(".demo1").innerHTML = findMax(10, 20, 30);
+
+// function sumAll(){
+//   let sum = 0;
+//   for(let i = 0; i < arguments.length; i++){
+//     sum += arguments[i];
+//   }
+//   return sum;
+// }
+// document.querySelector('.demo1').innerHTML = sumAll(1, 123,500, 115, 44, 88)
+
+// const myObject = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+// document.querySelector(".demo1").innerHTML = myObject.fullName();
+
+// function myFunction(arg1, arg2) {
+//   this.firstName = arg1;
+//   this.lastName = arg2;
+// }
+// const myObj = new myFunction("Hazrat", "Ali");
+// document.querySelector(".demo1").innerHTML = myObj.firstName;
+
+// const person = {
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+// const person1 = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+// };
+// const person2 = {
+//   firstName: "Mizan",
+//   lastName: "Ahad",
+// };
+
+// document.querySelector(".demo1").innerHTML = person.fullName.call(person2);
+
+// const person = {
+//   fullName: function (age, eyeColor) {
+//     return (
+//       this.firstName +
+//       " " +
+//       this.lastName +
+//       " is " +
+//       age +
+//       " years old eye is " +
+//       eyeColor
+//     );
+//   },
+// };
+// const person1 = {
+//   firstName: "Mizan",
+//   lastName: "Ahad",
+// };
+// const person2 = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+// };
+
+// document.querySelector(".demo1").innerHTML = person.fullName.call(
+//   person1,
+//   23,
+//   "blue"
+// );
+
+// const person = {
+//   fullName: function (city, town) {
+//     return (
+//       this.firstName +
+//       " " +
+//       this.lastName +
+//       "his city " +
+//       city +
+//       " and his home town " +
+//       town
+//     );
+//   },
+// };
+
+// const person1 = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+// };
+// const person2 = {
+//   firstName: "Mizan",
+//   lastName: "Ahad",
+// };
+
+// document.querySelector(".demo1").innerHTML = person.fullName.call(
+//   person1,
+//   "Dhaka",
+//   "Bhola"
+// );
+
+// const person = {
+//   fullName: function (city, country) {
+//     return this.firstName + " " + this.lastName + " ," + city + " ," + country;
+//   },
+// };
+
+// const person1 = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+// };
+// const person2 = {
+//   firstName: "Mizan",
+//   lastName: "Ahad",
+// };
+
+// document.querySelector(".demo1").innerHTML = person.fullName.apply(person1, [
+//   "Dhaka",
+//   "BD",
+// ]);
+
+// document.querySelector(".demo1").innerHTML = person.fullName.apply(person2, [
+//   "Dhaka",
+//   "Bangladesh",
+// ]);
+
+// document.querySelector(".demo1").innerHTML = Math.max.apply(0, [(1, 2, 3, 4)]);
+
+// const person = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+// const member = {
+//   firstName: "Hege",
+//   lastName: "Ali",
+// };
+
+// let FullName = person.fullName.bind(member);
+// console.log(FullName);
+// document.querySelector(".demo1").innerHTML = FullName;
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  fullName: function () {
     return this.firstName + " " + this.lastName;
-  };
-}
-
-const hazrat = new Person("Hazrat", "Ali", 23);
-const mizan = new Person("Mizan", "Ahad", 22);
-const hosen = new Person("Hosen", "Howlader", 23);
-
-Person.country = "Bangladesh";
-
-console.log(hazrat.fullName());
-console.log(mizan.fullName());
+  },
+};
+const member = {
+  firstName: "Hege",
+  lastName: "Ali",
+};
+let fullName = person.fullName.bind(member);
+document.querySelector(".demo1").innerHTML = fullName();
