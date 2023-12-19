@@ -6505,16 +6505,297 @@ document.querySelector(
 // console.log(FullName);
 // document.querySelector(".demo1").innerHTML = FullName;
 
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  fullName: function () {
-    return this.firstName + " " + this.lastName;
-  },
-};
-const member = {
-  firstName: "Hege",
-  lastName: "Ali",
-};
-let fullName = person.fullName.bind(member);
-document.querySelector(".demo1").innerHTML = fullName();
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+// const member = {
+//   firstName: "Hege",
+//   lastName: "Ali",
+// };
+// let fullName = person.fullName.bind(member);
+// document.querySelector(".demo1").innerHTML = fullName();
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   display: function () {
+//     let x = document.querySelector(".demo1");
+//     x.innerHTML = this.firstName + " " + this.lastName;
+//   },
+// };
+
+// person.display();
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   display: function () {
+//     let x = document.querySelector(".demo1");
+//     x.innerHTML = this.firstName + " " + this.lastName;
+//   },
+// };
+
+// let display = person.display.bind(person);
+// setTimeout(display, 2000);
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   display: function () {
+//     let x = document.querySelector(".demo1");
+//     x.innerHTML = this.firstName + " " + this.lastName;
+//   },
+// };
+// let display = person.display.bind(person);
+// setTimeout(display, 3000);
+
+// document.querySelector(".demo1").innerHTML = add();
+// function add() {
+//   let counter = 0;
+//   function plus() {
+//     counter += 1;
+//   }
+//   plus();
+//   return counter;
+// }
+
+// function myFunction1() {
+//   let text = document.querySelector(".demo1").innerHTML;
+//   document.querySelector(".demo1").innerHTML = text.replace(
+//     /Microsoft/gi,
+//     "W3Schools"
+//   );
+// }
+
+// let text = "12";
+// text = text.padStart(6, "x");
+// console.log(text);
+
+// let text = "HELLO WORLD";
+// document.querySelector(".demo1").innerHTML = text.charCodeAt(2);
+// let Char = text[1];
+// console.log(Char)
+
+// let text = "Please locate where 'locate' occurs!";
+// let index = text.lastIndexOf("locate");
+// document.querySelector(".demo1").innerHTML = index;
+
+// let myNumber = 2;
+// let text = "";
+// while (myNumber != Infinity) {
+//   myNumber = myNumber * myNumber;
+//   text = text + myNumber + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// let x = 9007199254740995n;
+// let y = 9007199254740995n;
+
+// let z = x * y;
+// document.querySelector(".demo1").innerHTML = "Bigint: " + z;
+
+// let x = new Date("2023-12-15");
+// document.querySelector(".demo1").innerHTML = Number(x);
+
+// const point = [40, 50, 20, 10, 60, 11, 20];
+// point.sort(function(a, b){return a - b})
+// document.querySelector('.demo1').innerHTML = point[0]
+
+// const points = [40, 100, 1, 5, 25, 10];
+// document.querySelector(".demo1").innerHTML = myArrayMax(points);
+
+// function myArrayMax(arr) {
+//   return Math.max.apply(null, arr);
+// }
+
+// const points = [40, 100, 1, 5, 25, 10];
+// document.querySelector(".demo1").innerHTML = myArrayMax(points);
+
+// function myArrayMax(arr) {
+//   let len = arr.length;
+//   let max = -Infinity;
+//   while (len--) {
+//     if (arr[len] > max) {
+//       max = arr[len];
+//     }
+//   }
+//   return max;
+// }
+
+// const months = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+// const d = new Date("2023-11-16");
+// let month = months[d.getMonth()];
+// document.querySelector(".demo1").innerHTML = month;
+
+// document.querySelector(".demo1").innerHTML = Math.floor(Math.random() * 7);
+
+// function getRanInteger(min, max) {
+//   return Math.floor(Math.random() * (max - min)) + min;
+// }
+
+// const person = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   get fullName() {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+
+// document.querySelector(".demo1").innerHTML = person.fullName;
+
+// const person = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   language: "English",
+//   get lang() {
+//     return this.language.toUpperCase();
+//   },
+// };
+// document.querySelector(".demo1").innerHTML = person.lang;
+
+// const person = {
+//   firstName: "Hazrat",
+//   lastName: "Ali",
+//   language: " ",
+//   set lang(lang) {
+//     this.language = lang.toUpperCase();
+//   },
+// };
+
+// person.lang = "En";
+
+// document.querySelector(".demo1").innerHTML = person.language;
+
+// function Person(first, last, age, eye) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+//   this.eye = eye;
+// }
+// const myName = new Person("Hazrat", "Ali", 20, "Blue");
+// document.querySelector(".demo1").innerHTML = "My Age is " + myName.age + ".";
+
+// function Person(first, last, age, eye) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+//   this.eyeColor = eye;
+// }
+// Person.prototype.name = function () {
+//   return this.firstName + " " + this.lastName;
+// };
+
+// const myFather = new Person("John", "Doe", 50, "Blue");
+// document.querySelector(".demo1").innerHTML = "My father is " + myFather.name();
+
+// myNumbers = {};
+
+// myNumbers[Symbol.iterator] = function () {
+//   let n = 0;
+//   done = false;
+//   return {
+//     next() {
+//       n += 10;
+//       if (n == 100) {
+//         done = true;
+//       }
+//       return { value: n, done: done };
+//     },
+//   };
+// };
+// let text = " ";
+// for (const num of myNumbers) {
+//   text += num + "<br>";
+// }
+// document.querySelector(".demo1").innerHTML = text;
+
+// class Car {
+//   constructor(name, year) {
+//     this.name = name;
+//     this.year = year;
+//   }
+//   age() {
+//     const date = new Date();
+//     return date.getFullYear() - this.year;
+//   }
+// }
+
+// const myCar = new Car("Ford", 2010);
+// document.querySelector(".demo1").innerHTML =
+//   "My car is " + myCar.age() + " year old";
+// console.log(myCar.age());
+
+// class Car {
+//   constructor(name, year) {
+//     this.name = name;
+//     this.year = year;
+//   }
+//   age(x) {
+//     return x - this.year;
+//   }
+// }
+// const date = new Date();
+// let year = date.getFullYear();
+// const myCar = new Car("Ford", 2014);
+// document.querySelector(".demo1").innerHTML =
+//   "My car is " + myCar.age(year) + " years old";
+
+// class Car {
+//   constructor(brand) {
+//     this.carname = brand;
+//   }
+//   present() {
+//     return "I have a " + this.carname;
+//   }
+// }
+
+// class Model extends Car {
+//   constructor(brand, mod) {
+//     super(brand);
+//     this.model = mod;
+//   }
+//   show() {
+//     return this.present() + ", it is a " + this.model;
+//   }
+// }
+// const myCar = new Model("Ford", "Mustang");
+// document.querySelector(".demo1").innerHTML = myCar.show();
+
+class Car {
+  constructor(brand) {
+    this.carname = brand;
+  }
+  present() {
+    return "I have a " + this.carname;
+  }
+}
+
+class Model extends Car {
+  constructor(brand, mod) {
+    super(brand);
+    this.model = mod;
+  }
+  show() {
+    return this.present() + ", it is a " + this.model;
+  }
+}
+const myCar = new Model("Ford", "Mustang");
+document.querySelector(".demo1").innerHTML = myCar.show();
+document.querySelector(".demo2").innerHTML = myCar.present();

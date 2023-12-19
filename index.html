@@ -47,7 +47,10 @@
       <div class="container content1">
         <div class="box_same demo7">Free Palestine</div>
         <input class="inp_1" value="0" />
-        <button type="button" onclick="this.style.display = 'none'">
+        <button
+          type="button"
+          onclick="document.querySelector('.demo7').innerHTML = getRanInteger(0, 10)"
+        >
           Click Me
         </button>
       </div>
