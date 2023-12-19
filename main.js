@@ -6778,24 +6778,259 @@ document.querySelector(
 // const myCar = new Model("Ford", "Mustang");
 // document.querySelector(".demo1").innerHTML = myCar.show();
 
-class Car {
-  constructor(brand) {
-    this.carname = brand;
-  }
-  present() {
-    return "I have a " + this.carname;
-  }
+// class Car {
+//   constructor(brand) {
+//     this.carname = brand;
+//   }
+//   present() {
+//     return "I have a " + this.carname;
+//   }
+// }
+
+// class Model extends Car {
+//   constructor(brand, mod) {
+//     super(brand);
+//     this.model = mod;
+//   }
+//   show() {
+//     return this.present() + ", it is a " + this.model;
+//   }
+// }
+// const myCar = new Model("Ford", "Mustang");
+// document.querySelector(".demo1").innerHTML = myCar.show();
+// document.querySelector(".demo2").innerHTML = myCar.present();
+
+// class Car {
+//   constructor(brand) {
+//     this.carname = brand;
+//   }
+//   get cnam() {
+//     return this.carname;
+//   }
+//   set cnam(x) {
+//     this.carname = x;
+//   }
+// }
+
+// const myCar = new Car("Ford");
+// document.querySelector(".demo1").innerHTML = myCar.cnam;
+
+// class Car {
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   static hello() {
+//     return "Hello";
+//   }
+// }
+
+// const myCar = new Car("Ford");
+// document.querySelector(".demo1").innerHTML = Car.hello();
+
+// class Car {
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   static hello(x) {
+//     return "Hello" + x.name;
+//   }
+// }
+// const myCar = new Car(" Ford");
+// document.querySelector(".demo1").innerHTML = Car.hello(myCar);
+
+// function myDisplayer(some) {
+//   document.querySelector(".demo1").innerHTML = some;
+// }
+// function myFirst() {
+//   myDisplayer("Hello");
+// }
+// function mySecond() {
+//   myDisplayer("Goodbye");
+// }
+// mySecond();
+// myFirst();
+
+// function myDisplayer(some) {
+//   document.querySelector(".demo1").innerHTML = some;
+// }
+// function myCalculator(num1, num2) {
+//   let sum = num1 * num2;
+//   return sum;
+// }
+// let result = myCalculator(10, 10);
+// myDisplayer(result);
+
+// function myDisplayer(some) {
+//   document.querySelector(".demo1").innerHTML = some;
+// }
+// function myCalculator(num1, num2) {
+//   let sum = num1 * num2;
+//   myDisplayer(sum);
+// }
+// myCalculator(5, 5);
+
+// function myDisplayer(something) {
+//   document.querySelector(".demo1").innerHTML = something;
+// }
+// function myCalculator(num1, num2, myCallback) {
+//   let sum = num1 + num2;
+//   myCallback(sum);
+// }
+// myCalculator(5, 5, myDisplayer);
+
+// const myNumbers = [4, 1, -20, -7, 5, 9, -6];
+// const posNumbers = removeNeg(myNumbers, (x) => x >= 0);
+// document.querySelector(".demo1").innerHTML = posNumbers;
+
+// function removeNeg(numbers, callback) {
+//   const myArray = [];
+//   for (const x of numbers) {
+//     if (callback(x)) {
+//       myArray.push(x);
+//     }
+//   }
+//   return myArray;
+// }
+
+// setTimeout(myFunction, 3000);
+// function myFunction() {
+//   document.querySelector(".demo1").innerHTML = "I love you !!";
+// }
+
+// setTimeout(function () {
+//   document.querySelector(".demo1").innerHTML = "Hello World!";
+// }, 1000);
+
+// setInterval(function () {
+//   document.querySelector(".demo1").innerHTML = "I love you!";
+// }, 1000);
+
+// setTimeout(function () {
+//   myFunction("I love You!!!");
+// }, 2000);
+// function myFunction(value) {
+//   document.querySelector(".demo1").innerHTML = value;
+// }
+
+// setInterval(myFunction, 1000);
+// function myFunction() {
+//   let d = new Date();
+//   document.querySelector(".demo1").innerHTML =
+//     d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+// }
+
+// const paymentSuccess = true;
+// const marks = 90;
+
+// function enroll(callback) {
+//   console.log("Course enrollment is in progress.");
+
+//   setTimeout(function () {
+//     if (paymentSuccess) {
+//       callback();
+//     } else {
+//       console.log("Payment failed!");
+//     }
+//   }, 2000);
+// }
+
+// function progress(callback) {
+//   console.log("Course on progress...");
+
+//   setTimeout(function () {
+//     if (marks >= 80) {
+//       callback();
+//     } else {
+//       console.log("You colud not get enough marks to get the certificate");
+//     }
+//   }, 3000);
+// }
+
+// function getCertificate() {
+//   console.log("Preparing your certificate!");
+
+//   setTimeout(function () {
+//     console.log("Congrats! You got the certificate");
+//   }, 1000);
+// }
+
+// enroll(function () {
+//   progress(getCertificate);
+// });
+
+// const status = true;
+// console.log("Task 1");
+
+// const promise = new Promise(function (resolve, reject) {
+//   setTimeout(function () {
+//     if (status) {
+//       resolve("Task 2");
+//     } else {
+//       reject("failed");
+//     }
+//   }, 2000);
+// });
+
+// promise
+//   .then(function (value) {
+//     console.log(value);
+//   })
+//   .catch(function (err) {
+//     console.log(err);
+//   });
+
+// console.log("Task 3");
+
+const paymentSuccess = true;
+const marks = 90;
+
+function enroll() {
+  console.log(" Course enrollment is in progress.");
+
+  const promise = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      if (paymentSuccess) {
+        resolve();
+      } else {
+        reject("Payment failed!");
+      }
+    }, 2000);
+  });
+  return promise;
 }
 
-class Model extends Car {
-  constructor(brand, mod) {
-    super(brand);
-    this.model = mod;
-  }
-  show() {
-    return this.present() + ", it is a " + this.model;
-  }
+function progress() {
+  console.log("Course on progress...");
+
+  const promise = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      if (marks >= 80) {
+        resolve();
+      } else {
+        reject("You could not get enough marks to get the certificate");
+      }
+    }, 3000);
+  });
+  return promise;
 }
-const myCar = new Model("Ford", "Mustang");
-document.querySelector(".demo1").innerHTML = myCar.show();
-document.querySelector(".demo2").innerHTML = myCar.present();
+
+function getCertificate() {
+  console.log("Preparing your certificate!!");
+
+  const promise = new Promise(function (resolve) {
+    setTimeout(function () {
+      resolve("Congrats! You got the cirtificate");
+    }, 1000);
+  });
+  return promise;
+}
+
+enroll()
+  .then(progress)
+  .then(getCertificate)
+  .then(function (value) {
+    console.log(value);
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
