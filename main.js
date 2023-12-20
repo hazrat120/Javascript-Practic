@@ -6981,56 +6981,324 @@ document.querySelector(
 
 // console.log("Task 3");
 
-const paymentSuccess = true;
-const marks = 90;
+// const paymentSuccess = true;
+// const marks = 90;
 
-function enroll() {
-  console.log(" Course enrollment is in progress.");
+// function enroll() {
+//   console.log(" Course enrollment is in progress.");
 
-  const promise = new Promise(function (resolve, reject) {
-    setTimeout(function () {
-      if (paymentSuccess) {
-        resolve();
-      } else {
-        reject("Payment failed!");
-      }
-    }, 2000);
-  });
-  return promise;
+//   const promise = new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//       if (paymentSuccess) {
+//         resolve();
+//       } else {
+//         reject("Payment failed!");
+//       }
+//     }, 2000);
+//   });
+//   return promise;
+// }
+
+// function progress() {
+//   console.log("Course on progress...");
+
+//   const promise = new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//       if (marks >= 80) {
+//         resolve();
+//       } else {
+//         reject("You could not get enough marks to get the certificate");
+//       }
+//     }, 3000);
+//   });
+//   return promise;
+// }
+
+// function getCertificate() {
+//   console.log("Preparing your certificate!!");
+
+//   const promise = new Promise(function (resolve) {
+//     setTimeout(function () {
+//       resolve("Congrats! You got the cirtificate");
+//     }, 1000);
+//   });
+//   return promise;
+// }
+
+// enroll()
+//   .then(progress)
+//   .then(getCertificate)
+//   .then(function (value) {
+//     console.log(value);
+//   })
+//   .catch(function (err) {
+//     console.log(err);
+//   });
+
+// function myDisplayer(some) {
+//   document.querySelector(".demo1").innerHTML = some;
+// }
+
+// let myPromise = new Promise(function (resolve, reject) {
+//   let x = 0;
+//   if (x == 0) {
+//     resolve("Ok");
+//   } else {
+//     reject("Error");
+//   }
+// });
+
+// myPromise.then(
+//   function (value) {
+//     myDisplayer(value);
+//   },
+//   function (error) {
+//     myDisplayer(error);
+//   }
+// );
+
+// setTimeout(function () {
+//   myFunction("I love you !!");
+// }, 3000);
+
+// function myFunction(value) {
+//   document.querySelector(".demo1").innerHTML = value;
+// }
+
+// function myDisplayer(some) {
+//   document.querySelector(".demo1").innerHTML = some;
+// }
+// async function myFunction() {
+//   return "Hello";
+// }
+
+// myFunction().then(
+//   function (value) {
+//     myDisplayer(value);
+//   },
+//   function (error) {
+//     myDisplayer(error);
+//   }
+// );
+
+// function myDisplayer(some) {
+//   document.querySelector(".demo1").innerHTML = some;
+// }
+
+// async function myFunction() {
+//   return "Hello";
+// }
+
+// myFunction().then(function (value) {
+//   myDisplayer(value);
+// });
+
+// async function myFunction() {
+//   let myPromise = new Promise(function (resolve, reject) {
+//     resolve("I love you!!");
+//   });
+//   document.querySelector(".demo1").innerHTML = await myPromise;
+// }
+
+// myFunction();
+
+// const x = document.forms["frm1"];
+// let text = " ";
+// for (let i = 0; i < x.length; i++) {
+//   text += x.elements[i].value + "<br>";
+// }
+
+// document.querySelector(".demo1").innerHTML = text;
+
+// function validateForm() {
+//   let x = document.forms["myForm"]["fname"].value;
+//   if (x == "") {
+//     alert("Name must be failled out");
+//     return false;
+//   }
+// }
+
+// function myFunction4() {
+//   let x = document.querySelector(".inp_1").value;
+//   let text;
+//   if (isNaN(x) || x < 1 || x > 100) {
+//     text = "Input not valid";
+//   } else {
+//     text = "Input Ok";
+//   }
+//   document.querySelector(".demo7").innerHTML = text;
+// }
+
+// document.querySelector(".demo1").style.color = "red";
+
+// document.querySelector(".demo1").style.fontFamily = "Arial";
+
+// document.querySelector(".demo1").style.fontWeight = "700";
+
+// function myFunction1() {
+//   document.querySelector(".demo1").style.color = "red";
+// }
+
+// function myMove() {
+//   let id = null;
+//   const elem = document.querySelector("#animate");
+//   let pos = 0;
+//   clearInterval(id);
+//   id = setInterval(frame, 5);
+//   function frame() {
+//     if (pos == 350) {
+//       clearInterval(id);
+//     } else {
+//       pos++;
+//       elem.style.top = pos + "px";
+//       elem.style.left = pos + "px";
+//     }
+//   }
+// }
+
+// function myMove() {
+//   let id = null;
+//   const elem = document.querySelector("#animate");
+//   let pos = 0;
+//   clearInterval(id);
+//   id = setInterval(frame, 8);
+//   function frame() {
+//     if (pos == 350) {
+//       clearInterval(id);
+//     } else {
+//       pos++;
+//       elem.style.top = pos + "px";
+//       elem.style.left = pos + "px";
+//     }
+//   }
+// }
+
+// function changeTest(id) {
+//   id.innerHTML = "Hello World";
+// }
+
+// function displayDate() {
+//   document.querySelector(".demo1").innerHTML = Date();
+// }
+
+// document.querySelector(".btn-1").onclick = displayDate;
+
+// function displayDate() {
+//   document.querySelector(".demo1").innerHTML = Date();
+// }
+
+// function checkCookies() {
+//   let text = "";
+//   if (navigator.cookieEnabled == true) {
+//     text = "Cookies are enabled.";
+//     console.log("Cookies are enabled.");
+//   } else {
+//     text = "Cookies are not enabled.";
+//     console.log("Cookies are not enabled.");
+//   }
+//   document.querySelector(".demo1").innerHTML = text;
+// }
+
+// function upperCase() {
+//   const x = document.querySelector(".inp_1");
+//   x.value = x.value.toUpperCase();
+// }
+
+// function mOver(obj){
+//   obj.innerHTML = 'Thank You'
+// }
+// function mOut(obj){
+//   obj.innerHTML = 'Mouse Over Me'
+// }
+
+// function mDown(obj) {
+//   obj.style.backgroundColor = " pink";
+//   obj.innerHTML = "Release Me";
+// }
+// function mUp(obj) {
+//   obj.style.backgroundColor = "#d94a38";
+//   obj.innerHTML = "Thank You";
+// }
+
+// document.querySelector('.btn-1').addEventListener('click', displayDate);
+
+// function displayDate(){
+//   document.querySelector('.demo1').innerHTML = Date();
+// }
+
+// document.querySelector(".btn-1").addEventListener("click", displayDate);
+
+// function displayDate() {
+//   document.querySelector(".demo1").innerHTML = Date();
+// }
+
+// document.querySelector(".btn-1").addEventListener("click", function () {
+//   alert("Hello Mr!");
+// });
+
+// let x = document.querySelector(".btn-1");
+// x.addEventListener("click", myFunction);
+// x.addEventListener("mouseout", someOtherFunction);
+
+// function myFunction() {
+//   alert("Alert You!");
+// }
+// function someOtherFunction() {
+//   alert("Alert You 2!");
+// }
+
+// window.addEventListener("resize", function () {
+//   this.document.querySelector(".demo1").innerHTML = Math.random();
+// });
+
+// let p1 = 5;
+// let p2 = 10;
+// document.querySelector(".btn-1").addEventListener("click", function () {
+//   myFunction(p1, p2);
+// });
+
+// function myFunction(a, b) {
+//   document.querySelector(".demo1").innerHTML = a * b;
+// }
+
+// document.querySelector("#myP1").addEventListener(
+//   "click",
+//   function () {
+//     alert("You clicked the white element!");
+//   },
+//   false
+// );
+
+// document.querySelector("#myDiv1").addEventListener(
+//   "click",
+//   function () {
+//     alert("You clicked the orange element!");
+//   },
+//   false
+// );
+
+// document.querySelector("#myP2").addEventListener(
+//   "click",
+//   function () {
+//     alert("You clicked the white element!");
+//   },
+//   true
+// );
+
+// document.querySelector("#myDiv2").addEventListener(
+//   "click",
+//   function () {
+//     alert("You clicked the orange element!");
+//   },
+//   true
+// );
+
+document.querySelector("#myDIV").addEventListener("mousemove", myFunction);
+
+function myFunction() {
+  document.querySelector("#demo").innerHTML = Math.random();
 }
 
-function progress() {
-  console.log("Course on progress...");
-
-  const promise = new Promise(function (resolve, reject) {
-    setTimeout(function () {
-      if (marks >= 80) {
-        resolve();
-      } else {
-        reject("You could not get enough marks to get the certificate");
-      }
-    }, 3000);
-  });
-  return promise;
+function removeHandler() {
+  document.querySelector("myDIV").removeEventListener("mousemove", myFunction);
 }
-
-function getCertificate() {
-  console.log("Preparing your certificate!!");
-
-  const promise = new Promise(function (resolve) {
-    setTimeout(function () {
-      resolve("Congrats! You got the cirtificate");
-    }, 1000);
-  });
-  return promise;
-}
-
-enroll()
-  .then(progress)
-  .then(getCertificate)
-  .then(function (value) {
-    console.log(value);
-  })
-  .catch(function (err) {
-    console.log(err);
-  });

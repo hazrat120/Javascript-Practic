@@ -18,9 +18,7 @@
       <div class="container">
         <div class="box_same demo1">Free Palestine</div>
       </div>
-      <button type="button" class="btn-1" onclick="myFunction1">
-        Click Me
-      </button>
+      <button type="button" class="btn-1">Click Me</button>
     </section>
 
     <!-- 2 Box 1 Button For Show Javascript Content-->
@@ -29,7 +27,7 @@
         <div class="box_same demo2">Free Palestine</div>
         <div class="box_same demo3">Free Palestine</div>
       </div>
-      <button type="button" onclick="myFunction2">Click Me</button>
+      <button type="button" onclick="myFunction2()">Click Me</button>
     </section>
 
     <!--------- 3Box 1 Button---------->
@@ -39,32 +37,33 @@
         <div class="box_same demo5">Free Palestine</div>
         <div class="box_same demo6">Free Palestine</div>
       </div>
-      <button type="button" onclick="myFunction3">Click Me</button>
+      <button type="button" onclick="myFunction3()">Click Me</button>
     </section>
 
     <!------------ 1Box And 1 input ----------->
     <section id="box4">
       <div class="container content1">
         <div class="box_same demo7">Free Palestine</div>
-        <input class="inp_1" value="0" />
-        <button
-          type="button"
-          onclick="document.querySelector('.demo7').innerHTML = getRanInteger(0, 10)"
-        >
+        <input class="inp_1" type="text" onchange="upperCase()" />
+        <button type="button" onmousedown="mDown(this)" onmouseup="mUp(this)">
           Click Me
         </button>
       </div>
     </section>
 
-    <p>
-      <a href="javascript:void(0);">Useless link</a>
-    </p>
-    <p>
-      <a href="javascript:void(document.body.style.backgroundColor= 'red');"
-        >Click me to change body background color</a
-      >
-    </p>
+    <h2>JavaScript removeEventListener()</h2>
+
+    <div id="myDIV">
+      <p>
+        This div element has an onmousemove event handler that displays a random
+        number every time you move your mouse inside this orange field.
+      </p>
+      <p>Click the button to remove the div's event handler.</p>
+      <button onclick="removeHandler()" id="myBtn">Remove</button>
+    </div>
+
+    <p id="demo"></p>
     <!-------- Script Js--------->
-    <script src="./main.js" type="module"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
