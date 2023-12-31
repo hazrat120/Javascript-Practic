@@ -7293,12 +7293,102 @@ document.querySelector(
 //   true
 // );
 
-document.querySelector("#myDIV").addEventListener("mousemove", myFunction);
+// document.querySelector("#myDIV").addEventListener("mousemove", myFunction);
 
-function myFunction() {
-  document.querySelector("#demo").innerHTML = Math.random();
-}
+// function myFunction() {
+//   document.querySelector("#demo").innerHTML = Math.random();
+// }
 
-function removeHandler() {
-  document.querySelector("myDIV").removeEventListener("mousemove", myFunction);
-}
+// function removeHandler() {
+//   document.querySelector("myDIV").removeEventListener("mousemove", myFunction);
+// }
+
+// let p = document.querySelector("#demo");
+// const way1 = p.innerHTML;
+// console.log(way1);
+
+// const way2 = p.firstChild.nodeValue;
+// console.log(way2);
+
+// const way3 = p.childNodes[0];
+// console.log("Way 3 ", way3);
+
+// let P = document.querySelector(".demo");
+
+// const p1 = P.firstChild.nodeValue;
+// console.log(p1);
+
+// const p2 = P.childNodes[0].nodeValue;
+
+// document.querySelector(".demo1.").innerHTML =
+//   document.querySelector(".demo").firstChild.nodeValue;
+
+// document.querySelector("#demo").innerHTML =
+//   document.querySelector(".demo1").childNodes[0].nodeValue;
+
+// document.querySelector(".demo").innerHTML =
+//   document.querySelector(".demo1").childNodes[0].nodeValue;
+
+// document.querySelector(".demo").innerHTML =
+//   document.querySelector(".demo7").nodeName;
+
+// document.querySelector("#demo").innerHTML =
+//   document.querySelector(".child_1").nodeName;
+
+// document.querySelector(".child_1").innerHTML =
+//   document.querySelector(".demo").nodeType;
+
+// let ByTagName = document.querySelector("li");
+// for (let i = 0; i < ByTagName.length; i++) {
+//   console.log(ByTagName[i].innerHTML);
+// }
+
+// let elem = document.querySelector(".important");
+// console.log(elem[0].innerHTML);
+
+// const para = document.createElement("p");
+// const node = document.createTextNode("This is new.");
+// para.appendChild(node);
+
+// const elem = document.querySelector("#div1");
+// elem.appendChild(para);
+
+// const para = document.createElement("p");
+// const node = document.createTextNode("Hazrat Ali is made.");
+// para.appendChild(node);
+
+// const elem = document.querySelector("#div1");
+// elem.appendChild(para);
+
+// const para = document.createElement("p");
+// const node = document.createTextNode("Hello World");
+// para.appendChild(node);
+
+// const elem = document.querySelector("#div1");
+// const p2 = document.querySelector("#p2");
+// elem.insertBefore(para, p2);
+
+// const para = document.createElement("p");
+// const node = document.createTextNode("Hello World !!!!!!");
+// para.appendChild(node);
+
+// const eleme = document.querySelector("#div1");
+// const p1 = document.querySelector("#p1");
+// eleme.insertBefore(para, p1);
+// eleme.removeChild(p1);
+// eleme.replaceChild(para, p1)
+// eleme.replaceChild(para, p1)
+
+// const myColl = document.getElementsByTagName("p");
+
+// document.querySelector(".demo").innerHTML =
+//   "This document contains " + myColl.length + "paragraphs.";
+
+// console.log(myColl[1]);
+
+// function myFunction() {
+//   const myColl = document.getElementsByTagName("p");
+//   for (let i = 0; i < myColl.length; i++) {
+//     myColl[i].style.color = "red";
+//   }
+// }
