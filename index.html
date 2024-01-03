@@ -47,13 +47,33 @@
       <div class="container content1">
         <div class="box_same demo7">Free Palestine</div>
         <input class="inp_1" type="text" onchange="upperCase()" />
-        <button type="button" onmousedown="mDown(this)" onmouseup="mUp(this)">
-          Click Me
-        </button>
+        <button type="button" onmousedown="mDown(this)">Click Me</button>
       </div>
     </section>
 
-    <div class="bottom"></div>
+    <div class="bottom">
+      <!-- <input
+        type="button"
+        value="Set name cookie"
+        onclick="setCookie('name', 'Hazrat Ali')"
+      />
+      <input
+        type="button"
+        value="Set username cookie"
+        onclick="setCookie('username', 'Hazrat', 2)"
+      />
+      <input
+        type="button"
+        value="Get name cookie"
+        onclick="alert(getCookie('name'))"
+      />
+      <input
+        type="button"
+        value="Get username cookie"
+        onclick="alert(getCookie('username'))"
+      /> -->
+      <input type="button" value="New Cookie" onclick="setCookie()" />
+    </div>
 
     <!-------- Script Js--------->
     <script src="./message.js"></script>
